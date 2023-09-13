@@ -1,4 +1,4 @@
-package com.app.onesteprepo;
+package com.app.onestep;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

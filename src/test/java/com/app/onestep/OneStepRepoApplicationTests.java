@@ -1,4 +1,4 @@
-package com.app.onesteprepo;
+package com.app.onestep;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

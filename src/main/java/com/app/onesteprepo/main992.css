@@ -1,0 +1,72 @@
+.pool-header {
+    box-shadow: 0 1px rgba(0, 0, 0, .05);
+}
+
+.navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.header .primary-nav > .container, .header .primary-nav > .container-fluid {
+    justify-content: flex-start;
+}
+
+.header .container, .header .primary-nav > .container, .header .primary-nav > .container-fluid {
+    padding-right: 26px;
+    padding-left: 26px;
+}
+
+.navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+    flex-wrap: nowrap;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.navbar-brand {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    padding: 0;
+}
+
+.navbar-brand .nav-link.active {
+    font-weight: 400;
+}
+
+.navbar-brand .nav-link {
+    padding: 0 14px;
+    font-size: 17px;
+}
+
+.m-nav {
+    order: 10;
+}
+
+.navbar-expand-lg .navbar-toggler {
+    display: none;
+}
+
+.header #search-toggler, .header #user-menu-toggle .notification-badge {
+    display: none;
+}
+
+.d-lg-inline-flex {
+    display: inline-flex !important;
+}
+
+.justify-content-lg-end {
+    justify-content: flex-end !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+}
+
+.form-control, .custom-select {
+    font-size: 15px;
+}
+

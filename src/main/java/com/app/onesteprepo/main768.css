@@ -1,0 +1,79 @@
+.header .primary-nav > .container, .header .primary-nav > .container-fluid {
+    padding-right: 26px;
+    padding-left: 26px;
+    height: 60px;
+}
+
+.header .container {
+    height: 56px;
+}
+
+.container, .container-fluid {
+    padding-right: 26px;
+    padding-left: 26px;
+}
+
+.container {
+    max-width: 720px;
+}
+
+.header .one-step-logo {
+    padding-left: 1px;
+    margin-right: 16px;
+}
+
+body:not([class*="channel_admin"]):not([class*="editor"]) .pt-logo:not(.pt-logo-sm) [class*="logo-img"] {
+    width: 107px;
+    height: 28px;
+    background-size: 107px 56px;
+}
+
+.navbar-brand.index-navbar-brand {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    padding: 0;
+}
+
+.navbar-brand {
+    right: 220px;
+    left: 220px;
+    font-size: 20px;
+}
+
+.d-md-flex {
+    display: flex !important;
+}
+
+.navbar .nav-item {
+    height: 48px;
+}
+
+.navbar-brand.index-navbar-brand .nav-link {
+    padding: 0 14px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.header .m-nav {
+    margin: 0 -6px 0 12px;
+}
+
+.header .m-nav .btn-icon {
+    width: 44px;
+}
+
+.m-nav .btn > [class*="fa-"].fa-lg {
+    font-size: 20px;
+}
+
+#user-menu-toggle {
+    margin-left: 4px;
+    margin-top: 0;
+}
+
+#user-menu-toggle .user-avatar-sm {
+    width: 32px;
+    height: 32px;
+}

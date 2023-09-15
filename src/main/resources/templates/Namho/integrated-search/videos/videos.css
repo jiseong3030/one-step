@@ -70,9 +70,7 @@
 
 /* 매인 =============================================================================================================================================== */
 .main-head-wrap {
-    margin-right: initial;
-    margin-left: initial;
-    width: calc(100% - 340px);
+    width: 100%;
 }
 
 .main-head-container {
@@ -207,114 +205,37 @@
 }
 
 /* 아티클 ========================================================================================== */
-.article-wrap {
-    border-top: 1px solid #e9e9e9;
-}
-
-.article-container {
-    padding: 20px 2px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.videos-wrap {
     width: 100%;
-    word-break: break-all;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.post-category-container {
-    margin-bottom: 7px;
+.videos-row-container {
     width: 100%;
+    margin: 0 16px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
-.post-category {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 135%;
-    color: #0000008A;
-    margin: 0;
+.video-article {
+    margin: 0 8px 40px;
+    width: calc(100%/3 - 16px - 0.01px);
 }
 
-.post-category-devider {
-    border: 0;
-    border-left: 1px solid #0000008A;
-    width: 0;
-    height: 10px;
-    margin: 0 12px;
-}
-
-.post {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    word-wrap: break-word;
-}
-
-.post-data {
-    flex: 1;
+.video-thumbnail-container {
+    border-radius: 12px;
     overflow: hidden;
 }
 
-.post-data-title {
-    margin: 0 0 7px;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 135%;
-    color: #000;
-}
-
-.post-data-content {
-    font-size: 14px;
-    color: rgba(0, 0, 0, .47);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    margin: 0;
-}
-
-.post-tags-container {
-    margin-top: 11px;
-    height: 22px;
-    display: flex;
-    line-height: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.post-tag {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20.3px;
-    padding: 1px 6px;
-    margin-right: 6px;
-    color: rgba(0, 0, 0, .47);
-    text-align: center;
-    background: rgba(0, 0, 0, .05);
-    border-radius: 3px;
-    transition: background-color .15s ease-in-out;
-}
-
-.post-tag:hover {
-    background-color: #0000001A;
-}
-
-.post-thumbnail {
-    margin-left: 24px;
-}
-
-.post-thumbnail a {
+.video-thumbnail-container a {
     position: relative;
     display: block;
-    height: 108px;
+    height: 100%;
 }
 
-.post-thumbnail a::after {
+.video-thumbnail-container a::after {
     content: "";
     position: absolute;
     top: 0;
@@ -323,31 +244,31 @@
     width: 100%;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, .05);
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
-.post-thumbnail img {
-    width: 144px;
-    height: 108px;
+.video-thumbnail-container img {
+    width: 100%;
+    height: 100%;
     background-color: #F7F7F7;
-    border-radius: 8px;
     object-fit: cover;
 }
 
-.post-info {
-    margin-top: 15px;
+.video-info {
+    width: 100%;
+    height: 100px;
     display: flex;
-    align-items: center;
     flex-direction: row;
 }
 
 .user-avatar-container {
     display: block;
     position: relative;
-    margin-right: 8px;
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
+    width: 36px;
+    height: 36px;
+    margin-top: 12px;
+    margin-right: 12px;
+    min-width: 36px;
     border-radius: 50%;
     background-color: #fff;
     object-fit: cover;
@@ -366,23 +287,45 @@
 }
 
 .user-avatar-container img {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
 }
 
-.post-info-body {
+.video-info-body {
+    display: flex;
+    position: relative;
+    flex-direction: column;
     width: 100%;
+    padding-right: 24px;
 }
 
-.post-nickname {
-    font-size: 13px;
-    line-height: 135%;
+.video-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #000;
+    margin: 12px 0 4px 0;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 500;
 }
 
-.post-counters-container {
+.video-nickname {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .47);
+}
+
+.video-nickname:hover {
+    color: #000;
+}
+
+.video-counters-container {
     position: relative;
-    height: 16px;
+    height: 20px;
     margin-top: 1px;
     font-size: 12px;
     line-height: 130%;
@@ -424,23 +367,22 @@
     text-align: center;
 }
 
-.post-action {
-    display: flex;
-    justify-content: flex-end;
-    min-width: 64px;
-    margin-left: 24px;
+.video-action-btn {
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    top: 12px;
+    right: -12px;
+    cursor: pointer;
 }
 
-.post-bookmark {
-    min-width: 32px;
-    width: 32px;
-    height: 32px;
-    padding: 7px;
-    color: rgba(0, 0, 0, .47);
+.video-bookmark-btn {
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    bottom: 12px;
+    right: 0;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .bookmark-icon {
@@ -452,27 +394,12 @@
     display: flex;
 }
 
-.post-dropdown {
-    border: 0;
-    background-color: transparent;
-    margin-left: 4px;
-    min-width: 32px;
-    width: 32px;
-    height: 32px;
-    padding: 7px;
-    color: rgba(0, 0, 0, .47);
-    cursor: pointer;
-    position: relative;
-}
-
 .action-dropdown-container {
     display: none;
     position: absolute;
     min-width: 200px;
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
-    margin-top: 4px;
-    margin-bottom: 4px;
     font-size: 1rem;
     color: #606060;
     border-radius: 5px;
@@ -486,7 +413,7 @@
     will-change: transform;
     top: 0px;
     left: 0px;
-    transform: translate3d(-168px, 32px, 0px);
+    transform: translate3d(-180px, 26px, 0px);
     flex-direction: column;
 }
 
@@ -517,102 +444,6 @@
 
 .dropdown-action:hover .dropdown-action-icon {
     fill: #000;
-}
-
-/* 사이드바 ========================================================================= */
-.main-sidebar-container {
-    width: 280px;
-    margin: 0;
-}
-
-.sidebar-artists-title {
-    width: 100%;
-    margin: 0;
-    padding: 10px 0 12px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: inherit;
-    color: #0000008A;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
-}
-
-.artist-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
-}
-
-.artist-body {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.artist-nickname {
-    margin: 1px 0;
-    font-size: 15px;
-    word-break: break-all;
-    height: 18px;
-    line-height: 18px;
-}
-
-.artist-nickname:hover {
-    text-decoration: underline;
-}
-
-.artist-category {
-    height: 16px;
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.artist-subscription-btn {
-    padding: 3px 8px;
-    font-size: 13px;
-    flex: 0;
-    width: 58px;
-    min-width: 58px;
-    height: 32px;
-    margin: 4px 0 4px 14px;
-    cursor: pointer;
-    color: #3478ff;
-    border: 1px solid #3478ff;
-    line-height: 24px;
-    border-radius: 4px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 200ms;
-}
-
-.artist-subscription-btn:hover {
-    background-color: #3478ff;
-}
-
-.artist-subscription-btn svg {
-    fill: #3478ff;
-}
-
-.artist-subscription-btn:hover svg {
-    fill: #fff;
-}
-
-.artist-subscription-span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    font-size: 13px;
-    line-height: 24px;
-    white-space: inherit;
-}
-
-.artist-subscription-btn:hover .artist-subscription-span {
-    color: #fff;
 }
 
 /* 모달 ============================================================== */

@@ -1,138 +1,166 @@
-/* 서브헤더 ======================================================================================================================================== */
-.sub-header-wrap {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 0;
-    border: 1px solid rgba(0 0 0 / 5%);
-    border-left: 0;
-    border-right: 0;
-}
-
 .web-grid {
     max-width: 1000px;
     width: 100%;
     padding: 0;
-    margin: 0 auto;
-
+    margin: 60px auto 0;
 }
 
-.sub-header-container {
-    height: 48px;
+.subscripted-artist {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
-.sub-header-navs {
-    width: 100%;
-    height: 100%;
+.artist-info-container {
     margin: 0 auto;
-    padding: 0;
-    list-style: none;
+    max-width: 640px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-}
-
-.nav-item {
-    height: 48px;
-}
-
-.nav-item:not(:first-child) {
-    margin-left: 20px;
-}
-
-.nav-link {
-    height: 48px;
-    padding: 8px 10px;
-    border-top: 4px solid transparent;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    line-height: 24px;
-    list-style: none;
-}
-
-.nav-link.active {
-    border-bottom: 2px solid;
-    color: #000;
-    font-weight: 600;
-}
-
-/* 매인 =============================================================================================================================================== */
-.main-grid {
-    padding: 0 26px;
-    max-width: 692px;
-    width: 100%;
-    margin: 24px auto 40px;
-}
-
-.main-search-container {
-    width: 100%;
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.main-search-bar {
-    max-width: 260px;
-    width: 100%;
-    right: 0;
     position: relative;
+    padding: 18px 0;
+    cursor: pointer;
 }
 
-.search-bar-icon {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    left: 8px;
+.artist-info-container {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.blog-profil-img {
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+    margin-right: 12px;
+    border-radius: 7.5%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.blog-profil-img img {
+    width: inherit;
+    height: inherit;
+    vertical-align: top;
+}
+
+.artist-info-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.blog-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-title-name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.artist-profile-container {
+    margin-top: 0.5rem;
+    font-size: 13px;
+    line-height: 15.6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-avatar-container {
+    display: block;
+    position: relative;
+    margin-right: 8px;
     width: 32px;
     height: 32px;
+    min-width: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.user-avatar-container::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.user-avatar-container img {
+    width: 32px;
+    height: 32px;
+}
+
+.artist-nickname {
     font-size: 14px;
-    padding: 3px;
-    line-height: 28px;
+    margin: 0;
+    line-height: 25px;
+}
+
+.artist-subscription-btn {
     color: #909090;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    background-color: #fff;
+    border-color: #3478ff;
+    box-shadow: none;
+    padding: 9px 12.5px;
+    white-space: nowrap;
+    font-weight: 500;
+    line-height: 19px;
+    border-radius: 4px;
+    cursor: pointer;
+    max-height: 41px;
     align-items: center;
 }
 
-.search-bar-input {
-    border: 0;
-    width: 260px;
-    height: 40px;
-    padding: 0 48px 0 40px;
-    font-size: 14px;
-    background-color: #f0f0f0;
-    background-clip: border-box;
-    border-color: #f0f0f0;
-    border-radius: 10rem;
+.artist-subscription-btn.active {
+    border-color: rgba(0, 0, 0, .15);
 }
 
-.search-bar-input-erase-btn {
-    position: absolute;
-    border: 0;
-    top: 50%;
-    z-index: 1;
-    transform: translate(0, -50%);
-    right: 8px;
-    width: 40px;
-    height: 36px;
-    cursor: pointer;
+.artist-subscription-btn svg{
+    transform: translateY(2px);
+}
+
+.artist-subscription-span {
     display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    line-height: 24px;
+    white-space: inherit;
 }
 
-/* 아티클 =============================================================================== */
+.artist-subscription-span:first-child {
+    fill: #3478ff;
+    color: #3478ff;
+}
+
+.artist-posts-container {
+    background-color: #f8f8f8;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 18px;
+}
+
+/* 게시글 ========================================================== */
 .article-wrap {
     border-top: 1px solid #e9e9e9;
 }
@@ -444,7 +472,7 @@
     fill: #000;
 }
 
-/* 아티클 없을 시 ========================================================================= */
+/* 아티클 없을 시 */
 .no-article-container {
     display: flex;
     flex-direction: column;
@@ -461,41 +489,4 @@
     text-align: center;
     word-break: keep-all;
     color: #757575;
-}
-
-.fixed-info-container {
-    margin: auto 0;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    z-index: 15;
-    transform: translateY(-50px);
-    width: 250px;
-    pointer-events: none !important;
-    letter-spacing: normal;
-}
-
-.pop-up-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    margin: 0 0 5px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-family: arial, sans-serif;
-    line-height: 17px;
-    position: relative;
-    pointer-events: all !important;
-    background-color: #444;
-    color: #fff;
-    background-color: rgb(2, 2, 2);
-    text-align: left;
-}
-
-.erase-pop-up-btn {
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
 }

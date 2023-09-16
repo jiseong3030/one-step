@@ -43,12 +43,19 @@ $(function () {
     closeModal();
   });
 
+  // 필터 쿼리
   $(".mobo-checkbox-container").click(function () {
     $(this).toggleClass("active");
   });
 
-  $(".mobo-checkbox-container").click(function () {
-    $(this).toggleClass("active");
+  // 초기화 버튼
+  $(".mofo-reset-btn").click(function() {
+    $(".mobo-checkbox-container.active").removeClass("active");
+    $(".mobo-checkbox-container").each(function() {
+      if ($(this).find("label").text() === "제목" || $(this).find("label").text() === "부제목" || $(this).find("label").text() === "태그" || $(this).find("label").text() === "닉네임") {
+        $(this).addClass("active");
+      }
+    });
   });
 
   // 드랍다운

@@ -588,8 +588,13 @@
     transition: 200ms;
 }
 
+.artist-subscription-btn.active {
+    border-color: rgba(0, 0, 0, .15);
+}
+
 .artist-subscription-btn:hover {
     background-color: #3478ff;
+    color: #fff;
 }
 
 .artist-subscription-btn svg {
@@ -611,8 +616,8 @@
     white-space: inherit;
 }
 
-.artist-subscription-btn:hover .artist-subscription-span {
-    color: #fff;
+.active-text {
+    display: none;
 }
 
 /* 모달 ============================================================== */
@@ -848,4 +853,23 @@
 
 .mofo-filter-apply-btn:hover {
     background-color: #1e50ff;
+}
+
+/* 아티클 없을시 */
+.no-article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    min-height: 160px;
+    max-height: 240px;
+    padding: 32px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+    word-break: keep-all;
+    color: #757575;
 }

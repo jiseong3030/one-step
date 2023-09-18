@@ -107,3 +107,107 @@ h1, h2, h3, h4, h5, h6 {
 .h6, h6 {
     font-size: 1rem;
 }
+
+/* important */
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.text-alpha-black-47 {
+    color: rgba(0, 0, 0, .47) !important;
+}
+
+.mr-0, .mx-0 {
+    margin-right: 0 !important;
+}
+
+.justify-content-start {
+    justify-content: flex-start!important;
+}
+
+.d-md-flex {
+    display: flex !important;
+}
+
+.d-lg-inline-flex {
+    display: inline-flex !important;
+}
+
+.justify-content-lg-end {
+    justify-content: flex-end !important;
+}
+
+.d-lg-none {
+    display: none!important;
+}
+
+/* 일반 */
+
+.btn {
+    padding: calc(0.5rem - 1px) calc(1rem - 1px);
+    line-height: 1.5rem;
+    background: none;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button, .btn {
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 7px 15px;
+    font-size: 15px;
+    color: #000;
+    border-radius: 4px;
+}
+
+.btn-icon {
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+    line-height: 24px;
+    border: 1px solid transparent;
+}
+
+button, .btn {
+    transition: color .15s ease-in-out,background .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+[class*="fa-"] {
+    font-size: 16px;
+}
+
+.dropdown, .dropleft, .dropright, .dropup {
+    position: relative;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}

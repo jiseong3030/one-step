@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원스텝 | 회원가입</title>
+    <link rel="stylesheet" href="join.css">
+    <link rel="stylesheet" href="../../root.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <main class="main-content" id="main-content" role="main">
+        <section class="dialog">
+            <div class="dialog-content">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="sign-up" role="tabpanel">
+                        <h1>원스텝 회원가입</h1>
+                        <p class="d-none d-md-block no-margin" style="margin-bottom: 0 !important;">
+                            원스텝에서 다양한 예술가의 작품을 감상하며 즐겨보아요. 다양한 예술을 공유해요.
+                        </p>
+                        <div class="onestep-checkmark-squre check-age">
+                            <div class="check-age-container">
+                                <input type="checkbox" class="check-container-input" id="age-check" name
+                                    required="required">
+                                <label class="custom-control-label age-check-desc" for="age-check">
+                                    "만14세 이상입니다."
+                                </label>
+                            </div>
+                        </div>
+                        <div class="align-item-center auth-options" id="auth-options">
+                            <a class="btn-secondary" id=" btn-sign-up-social-kakao">
+                                <span class="icon-wrapper">
+                                    <i class="brand-icon-kakao"></i>
+                                </span>
+                                <span data-auth="kakao" class="media-body">
+                                    카카오로 회원가입
+                                </span>
+                            </a>
+                            <a class="btn-secondary" id=" btn-sign-up-social-email">
+                                <span class="icon-wrapper">
+                                    <i class="brand-icon-email"></i>
+                                </span>
+                                <span data-auth="email" class="media-body">
+                                    이메일로 회원가입
+                                </span>
+                            </a>
+                        </div>
+                        <p class="already">
+                            <span class="mr-1">
+                                이미 계정이 있으세요?
+                            </span>
+                            <a class="text-dark" href="https://www.postype.com/login">로그인</a>
+                        </p>
+                        <hr>
+                        <p>
+                            <a href="https://www.postype.com/auth/findAccount">계정찾기</a>
+                        </p>
+                        <hr>
+                        <p>
+                            <a class="text-muted">SNS로 로그인 및 회원가입 시 포스타입의 이용약관과 개인정보 수집 및 이용에 동의한 것으로 간주합니다.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="join.js"></script>
+
+</html>

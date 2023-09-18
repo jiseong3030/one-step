@@ -189,12 +189,25 @@
 .crowd-funding-head {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: -4px;
     font-weight: 400;
     font-size: 14px;
     line-height: 32px;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     padding-bottom: 8px;
+}
+
+.go-to-write {
+    border: 0;
+    line-height: 1.5rem;
+    color: #fff;
+    background-color: #3478ff;
+    cursor: pointer;
+    padding: 5px 19px;
+    font-size: 16px;
+    border-radius: 4px;
+    float: right;
 }
 
 .crowd-funding-container {
@@ -343,9 +356,61 @@
     border-radius: 4px;
     background-color: transparent;
     cursor: pointer;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.join-crowd-funding-btn:hover {
+    background-color: #3478ff;
+    color: #fff;
 }
 
 .join-crowd-funding-btn-font {
     font-size: 18px;
     padding: 4px 20px;
+}
+
+
+.post-request-user {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: start;
+    margin-bottom: 5px;
+}
+
+.user-avatar-container {
+    display: block;
+    position: relative;
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.user-avatar-container::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.user-avatar-container img {
+    width: 32px;
+    height: 32px;
+}
+
+.artist-nickname {
+    font-size: 14px;
+    margin: 0;
 }

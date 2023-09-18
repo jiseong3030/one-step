@@ -293,7 +293,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-top: 8px;
 }
 
 .percentage-font {
@@ -350,8 +349,13 @@
     color: #000;
 }
 
+.join-btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .join-crowd-funding-btn {
-    margin: 10px auto;
+    margin-top: 5px;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 4px;
     background-color: transparent;

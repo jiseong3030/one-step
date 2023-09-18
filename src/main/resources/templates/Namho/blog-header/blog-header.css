@@ -107,6 +107,7 @@ header {
 
 .h-user-menu-popover {
     position: absolute;
+    display: none;
     z-index: 1050;
     visibility: visible;
     padding-bottom: 6px;
@@ -116,6 +117,10 @@ header {
     border-radius: 5px;
     width: 264px;
     transform: translateX(-110px);
+}
+
+.h-user-menu-popover.active{
+    display: block;
 }
 
 .h-current-user-container {

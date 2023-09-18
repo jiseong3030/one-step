@@ -37,6 +37,7 @@
     width: 100%;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 8px;
+    position: relative;
 }
 
 .crowd-funding-content:not(first-child) {
@@ -132,10 +133,10 @@
 }
 
 .btn-wrap {
+    position: absolute;
     display: flex;
     justify-content: center;
-    padding: 24px 40px 0;
-    width: 100%;
+    right: 12px;
 }
 
 .accept-btn {
@@ -148,7 +149,6 @@
     font-size: 16px;
     border-radius: 4px;
 }
-
 
 .refuse-btn {
     margin-left: 0.5rem;
@@ -164,6 +164,7 @@
 
 .summit-input-wrap {
     display: none;
+    position: relative;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -203,11 +204,10 @@
 
 
 .accept-btn-wrap {
+    position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
+    right: 12px;
 }
 
 .summit-btn {
@@ -216,7 +216,7 @@
     color: #fff;
     background-color: #3478ff;
     cursor: pointer;
-    padding: 5px 19px;
+    padding: 11px 19px;
     font-size: 16px;
     border-radius: 4px;
 }
@@ -228,7 +228,7 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, .47);
     cursor: pointer;
-    padding: 5px 19px;
+    padding: 11px 19px;
     font-size: 16px;
     border-radius: 4px;
 }
@@ -291,6 +291,5 @@
 
 #slidedownBtn {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0;
 }

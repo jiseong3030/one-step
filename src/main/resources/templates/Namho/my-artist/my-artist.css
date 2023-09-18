@@ -154,9 +154,11 @@
 .artist-posts-container {
     background-color: #f8f8f8;
     width: 100%;
+    max-width: 640px;
     display: none;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
     padding: 0 18px;
 }
 

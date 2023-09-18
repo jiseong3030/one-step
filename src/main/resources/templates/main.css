@@ -78,24 +78,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: flex !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header .one-step-logo {
     padding-left: 16px;
 }
@@ -116,24 +98,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .logo-img-dark {
     opacity: .85;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 [class*="logo-img"] {
     display: inline-block;

@@ -4,75 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>원스텝 | 크라우드 펀딩</title>
-    <link rel="stylesheet" href="../../root.css">
-    <link rel="stylesheet" href="crowd-funding.css">
+    <link rel="stylesheet" href="../../../root.css">
+    <link rel="stylesheet" href="write.css">
     <link rel="stylesheet" type="text/css"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" as="style"
           onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-<header></header>
-
-<main style="padding-top: 60px;">
+<main>
     <div class="blog-grid">
-        <div class="blog-header">
-            <a class="blog-img"
-               style="background-image: url(https://d33pksfia2a94m.cloudfront.net/assets/img/avatar/blog_blank.png); transform: scale(1);">
-            </a>
-            <span class="channel-meta">
-                구독자
-                <span class="count">140</span>
-                명 · 포스트
-                <span class="count">40</span>개
-            </span>
-            <h1 class="blog-title">블로그 이름 테스트</h1>
-            <div class="blog-action-container">
-                <a class="blog-action-share">
-                    <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-270"></i>
-                </a>
-                <button class="blog-action-subscription-btn">
-                    <span class="default-text">구독하기</span>
-                    <span class="active-text">구독중</span>
-                </button>
-            </div>
-        </div>
-        <div class="head-nav-bar">
-            <ul>
-                <li>
-                    <a href="">홈</a>
-                </li>
-                <li>
-                    <a href="">게시글</a>
-                </li>
-                <li>
-                    <a href="">영상</a>
-                </li>
-                <li>
-                    <a href="">커뮤니티</a>
-                </li>
-                <li>
-                    <a href="#">후원</a>
-                </li>
-                <li>
-                    <a class="active">크라우드 펀딩</a>
-                </li>
-            </ul>
-        </div>
         <div class="crowd-funding-wrap">
-            <section class="top-container"></section>
             <div class="crowd-funding-head">
-                <div style="display: flex; flex-wrap: wrap">
-                    <span>2</span>
-                    개의 크라우드 펀딩이 진행 중 입니다.
-                </div>
-                <button class="go-to-write">크라우드 펀딩 요청하기</button>
+                현재&nbsp;
+                <span>2</span>
+                개의 크라우드 펀딩 요청이 있습니다.
             </div>
             <div class="crowd-funding-container">
                 <article class="crowd-funding-content">
                     <div class="post">
                         <div class="post-content">
-                            <h3 class="post-data-title">크라우드 펀딩 제목 테스트</h3>
+                            <h3 class="post-data-title">
+                                <span>팬 요청</span>
+                                <hr class="title-divider">
+                                크라우드 펀딩 제목 테스트
+                            </h3>
+                            <div class="post-request-user">
+                                <div href="#" class="user-avatar-container">
+                                    <img src="https://d33pksfia2a94m.cloudfront.net/assets/img/avatar/avatar_blank.png"
+                                         class="no-avatar">
+                                </div>
+                                <div class="artist-body">
+                                    <div href="#">
+                                        <h3 class="artist-nickname">테스트 요청자 유저</h3>
+                                    </div>
+                                </div>
+                            </div>
                             <p class="post-data-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Quisque varius, ante et posuere bibendum, felis massa scelerisque enim, quis
                                 imperdiet massa justo non lacus. Mauris posuere auctor lorem, vitae pellentesque
@@ -86,34 +53,22 @@
                                 Phasellus aliquam magna augue, a gravida orci lacinia vulputate.
                             </p>
                         </div>
-                        <div class="post-image-container">
-                            <img src="https://d3mcojo3jv0dbr.cloudfront.net/2022/12/09/17/59/437c724c608192b766f53e7b9f619753.png?w=144&amp;h=108&amp;q=65"
-                                 alt="2023 무드 차트">
+                    </div>
+                    <div class="btn-wrap">
+                        <button class="accept-btn">수락하기</button>
+                        <button class="refuse-btn">취소하기</button>
+                    </div>
+                    <div class="summit-input-wrap">
+                        <div class="row">
+                            <strong class="funding-font">목표 금액</strong>
+                            <input value="10000" class="funding-money-input" maxlength="8">
+                            <span class="tx-won">원</span>
+                        </div>
+                        <div class="accept-btn-wrap">
+                            <button class="summit-btn">작성완료</button>
+                            <button class="accept-cancel-btn">뒤로가기</button>
                         </div>
                     </div>
-                    <div class="progress-percentage">
-                        <span class="percentage-font">80</span>
-                        <span class="percentage-mark">%</span>
-                    </div>
-                    <div class="progress-total">
-                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
-                             aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="funding-container">
-                        <div class="funding">
-                            현재 모인 금액 :
-                            <span class="price">800,000</span>
-                            원
-                        </div>
-                        <div class="funding">
-                            목표 금액 :
-                            <span class="price">1,000,000</span>
-                            원
-                        </div>
-                    </div>
-                    <button class="join-crowd-funding-btn">
-                        <div class="join-crowd-funding-btn-font">크라우드 펀딩 참여하기</div>
-                    </button>
                 </article>
                 <article class="crowd-funding-content">
                     <div class="post">
@@ -148,38 +103,43 @@
                             </p>
                         </div>
                     </div>
-                    <div class="progress-percentage">
-                        <span class="percentage-font">80</span>
-                        <span class="percentage-mark">%</span>
+                    <div class="btn-wrap">
+                        <button class="accept-btn">수락하기</button>
+                        <button class="refuse-btn">취소하기</button>
                     </div>
-                    <div class="progress-total">
-                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
-                             aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="funding-container">
-                        <div class="funding">
-                            현재 모인 금액 :
-                            <span class="price">800,000</span>
-                            원
+                    <div class="summit-input-wrap">
+                        <div class="row">
+                            <strong class="funding-font">목표 금액</strong>
+                            <input value="10000" class="funding-money-input" maxlength="8">
+                            <span class="tx-won">원</span>
                         </div>
-                        <div class="funding">
-                            목표 금액 :
-                            <span class="price">1,000,000</span>
-                            원
+                        <div class="accept-btn-wrap">
+                            <button class="summit-btn">작성완료</button>
+                            <button class="accept-cancel-btn">뒤로가기</button>
                         </div>
                     </div>
-                    <button class="join-crowd-funding-btn">
-                        <div class="join-crowd-funding-btn-font">크라우드 펀딩 참여하기</div>
-                    </button>
                 </article>
+            </div>
+        </div>
+        <div class="request-wrap">
+            <div class="crowd-funding-head" id="relative">
+                구독 중인 아티스트에게 크라우드 펀딩을 요청해보세요.
+                <button class="request-btn" id="slidedownBtn">요청하기</button>
+            </div>
+            <div class="request-form-wrap">
+                <div class="request-form-container">
+                    <textarea class="form-content" cols="30" rows="10" maxlength="1000"></textarea>
+                    <div class="request-btn-wrap">
+                        <button class="request-btn">작성완료</button>
+                        <button class="cancel-btn">취소</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </main>
-
-<footer></footer>
 </body>
 <script src="https://kit.fontawesome.com/2364e2b536.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="crowd-funding.js"></script>
+<script src="write.js"></script>
 </html>

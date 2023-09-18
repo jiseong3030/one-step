@@ -22,11 +22,13 @@
               <i class="fas fa-bars"></i>
             </span>
           </a>
-          <div class="dropdown show" id="insert">
+<!--          <div class="dropdown show" id="insert">-->
+          <div class="dropdown" id="insert">
             <a class="btn btn-icon" id="insert-toggle" href="javascript:void(0);" data-toggle="dropdown" aria-label="삽입" title="삽입" aria-expanded="false">
               <i class="fas fa-plus"></i>
             </a>
-            <div class="dropdown-menu insert-menu show">
+<!--            <div class="dropdown-menu insert-menu show">-->
+            <div class="dropdown-menu insert-menu">
               <a id="btn-image-editor" class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#image-editor" aria-label="사진" title="이미지">
                 <span class="icon-wrapper">
                   <i class="far fa-images"></i>
@@ -71,9 +73,6 @@
           <a class="btn btn-icon" id="btn-redo" href="javascript:void(0);" aria-label="재실행" title="재실행">
             <i class="fas fa-redo"></i>
           </a>
-          <a class="btn btn-icon" href="javascript:void(0)" id="btn-speller-mode" aria-label="맞춤법 검사" title="맞춤법 검사">
-            <i class="fas fa-spell-check"></i>
-          </a>
         </div>
         <div class="btn-group-right">
           <div class="character-counter" id="character-counter" data-toggle="tooltip" data-placement="left" title="" data-original-title="공백을 포함한 글자 수입니다.">
@@ -86,13 +85,14 @@
           </a>
           <a class="btn-publish btn dropdown-toggle font-weight-semibold" id="btn-publish" href="javascript:void(0)">
             발행
-            <i class="fas fa-angle-down"></i>
           </a>
-          <div class="dropdown show" id="options">
+<!--          <div class="dropdown show" id="options">-->
+          <div class="dropdown" id="options">
             <a class="btn btn-icon" id="options-toggle" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false" aria-label="더보기">
               <i class="fas fa-ellipsis-h fa-lg"></i>
             </a>
-            <div class="dropdown-menu dropdown-menu-right options-menu show">
+            <div class="dropdown-menu dropdown-menu-right options-menu">
+<!--        <div class="dropdown-menu dropdown-menu-right options-menu show">-->
               <a class="dropdown-item" data-toggle="modal" data-target="#revision" href="javascript:void(0)">
                 <span class="icon-wrapper icon-wrapper-sm">
                   <i class="fas fa-history"></i>
@@ -132,13 +132,14 @@
   <!-- 서식 툴바 -->
     <div class="format-menu" id="format">
       <div class="format-group-1">
-        <button type="button" class="btn d-hide" id="btn-custom-format" data-toggle="modal" data-target="#default-style" aria-label="기본 스타일" title="기본 스타일">
-          <i class="far fa-cog"></i>
-        </button>
-        <div class="divider d-hide"></div>
+<!--        <button type="button" class="btn d-hide" id="btn-custom-format" data-toggle="modal" data-target="#default-style" aria-label="기본 스타일" title="기본 스타일">-->
+<!--          <i class="fas fa-cog"></i>-->
+<!--        </button>-->
+<!--        <div class="divider d-hide"></div>-->
         <div class="dropdown d-hide format-font-family">
           <button type="button" class="btn dropdown-toggle editor-dropdown" id="btn-font-family" data-target="dropdown-font" aria-label="글꼴">
-            <i class="far fa-font"></i>
+            <i class="fas fa-font"></i>
+            <i class="fas fa-angle-down"></i>
           </button>
           <div class="dropdown-menu dropdown-select" id="dropdown-font">
             <a class="dropdown-item font-noto-sans" href="javascript:" data-font-key="noto-sans" data-font-family="'Postype Sans-serif KR', sans-serif">고딕체</a>
@@ -146,21 +147,21 @@
             <a class="dropdown-item font-nanum-myeongjo" href="javascript:" data-font-key="nanum-myeongjo" data-font-family="'Nanum Myeongjo', serif">나눔명조</a>
           </div>
         </div>
-        <div class="divider d-hide"></div>
+<!--        <div class="divider d-hide"></div>-->
         <button type="button" class="btn" id="btn-bold" aria-label="굵게" title="굵게">
           <i class="fas fa-bold"></i>
         </button>
         <button type="button" class="btn d-hide" id="btn-italic" aria-label="기울임" title="기울임">
-          <i class="far fa-italic"></i>
+          <i class="fas fa-italic"></i>
         </button>
         <button type="button" class="btn d-hide" id="btn-underline" aria-label="밑줄" title="밑줄">
-          <i class="far fa-underline"></i>
+          <i class="fas fa-underline"></i>
         </button>
         <button type="button" class="btn d-hide" id="btn-strikethrough" aria-label="취소선" title="취소선">
-          <i class="far fa-strikethrough"></i>
+          <i class="fas fa-strikethrough"></i>
         </button>
         <button type="button" class="btn" id="btn-inline-link" aria-label="링크" title="링크">
-          <i class="far fa-link"></i>
+          <i class="fas fa-link"></i>
         </button>
         <div class="dropdown d-hide">
           <button type="button" class="btn editor-dropdown" id="btn-text-color" data-target="dropdown-text-color" aria-label="글자 색상" title="글자 색상">
@@ -201,7 +202,7 @@
               <a href="javascript:" style="background-color:#795548" data-color="#795548" class="colorchip brown" title="갈색"></a>
               <a href="javascript:" style="background-color:#607D8B" data-color="#607D8B" class="colorchip blue-grey" title="청회색"></a>
               <button type="button" class="btn btn-secondary btn-reset-color" data-color="REMOVE" title="초기화">
-                <i class="mi mi-sm" aria-label="초기화"></i>
+                <i class="fas fa-tint-slash"></i>
               </button>
             </div>
           </div>
@@ -211,7 +212,8 @@
       <div class="format-group-2">
         <div class="dropdown">
           <button type="button" class="btn dropdown-toggle editor-dropdown" id="btn-heading" data-target="dropdown-heading" aria-label="제목" title="제목">
-            <i class="far fa-heading"></i>
+            <i class="fas fa-heading"></i>
+            <i class="fas fa-angle-down"></i>
           </button>
           <div class="dropdown-menu dropdown-select" id="dropdown-heading">
             <a class="dropdown-item" href="javascript:" data-format="H3"><div class="h3">제목 1</div></a>
@@ -225,6 +227,7 @@
         <div class="dropdown">
           <button type="button" class="btn dropdown-toggle editor-dropdown" id="btn-quote" data-target="dropdown-quote" aria-label="인용" title="인용">
             <i class="fas fa-quote-left fa-sm"></i>
+            <i class="fas fa-angle-down"></i>
           </button>
           <div class="dropdown-menu dropdown-select" id="dropdown-quote">
             <a class="dropdown-item" href="javascript:" data-format="style1"><div class="q1">인용</div></a>
@@ -237,14 +240,14 @@
           </div>
         </div>
         <button type="button" class="btn" id="btn-list-bulleted" aria-label="점 목록" title="점 목록">
-          <i class="far fa-list-ul"></i>
+          <i class="fas fa-list-ul"></i>
         </button>
         <button type="button" class="btn" id="btn-list-numbered" aria-label="숫자 목록" title="숫자 목록">
-          <i class="far fa-list-ol"></i>
+          <i class="fas fa-list-ol"></i>
         </button>
         <div class="dropdown">
           <button type="button" class="btn editor-dropdown" id="btn-hr" data-target="dropdown-hr" aria-label="가로줄" title="가로줄">
-            <i class="far fa-minus"></i>
+            <i class="fas fa-minus"></i>
           </button>
           <div class="dropdown-menu dropdown-select" id="dropdown-hr">
             <a class="dropdown-item btn-insert-hr" href="#">
@@ -282,31 +285,36 @@
         <div class="divider d-hide"></div>
         <div class="dropdown d-hide">
           <button type="button" class="btn dropdown-toggle editor-dropdown" id="btn-align" data-target="dropdown-align" aria-label="글 정렬" title="글 정렬">
-            <i class="far fa-align-left" style=""></i>
-            <i class="far fa-align-center" style="display:none;"></i>
-            <i class="far fa-align-right" style="display:none;"></i>
-            <i class="far fa-align-justify" style="display:none;"></i>
+            <i class="fas fa-align-left" style=""></i>
+            <i class="fas fa-align-center" style="display:none;"></i>
+            <i class="fas fa-align-right" style="display:none;"></i>
+            <i class="fas fa-align-justify" style="display:none;"></i>
+            <i class="fas fa-angle-down"></i>
           </button>
           <div class="dropdown-menu dropdown-select" id="dropdown-align">
             <a class="dropdown-item" href="javascript:" data-align="left">
-              <span class="icon-wrapper"><i class="far fa-align-left mr-0"></i></span>
+              <span class="icon-wrapper">
+                <i class="fas fa-align-left mr-0"></i>
+              </span>
               왼쪽 정렬                </a>
             <a class="dropdown-item" href="javascript:" data-align="center">
-              <span class="icon-wrapper"><i class="far fa-align-center mr-0"></i></span>
+              <span class="icon-wrapper">
+                <i class="fas fa-align-center mr-0"></i>
+              </span>
               가운데 정렬                </a>
             <a class="dropdown-item" href="javascript:" data-align="right">
-              <span class="icon-wrapper"><i class="far fa-align-right mr-0"></i></span>
+              <span class="icon-wrapper">
+                <i class="fas fa-align-right mr-0"></i>
+              </span>
               오른쪽 정렬                </a>
             <a class="dropdown-item" href="javascript:" data-align="justify">
-              <span class="icon-wrapper"><i class="far fa-align-justify mr-0"></i></span>
+              <span class="icon-wrapper">
+                <i class="fas fa-align-justify mr-0"></i>
+              </span>
               양쪽 맞춤                </a>
           </div>
         </div>
       </div>
-      <button type="button" class="btn btn-format-expand" id="btn-format-expand" aria-label="펼치기" title="펼치기">
-        <i class="far fa-angle-down"></i>
-        <i class="far fa-angle-up"></i>
-      </button>
     </div>
   </div>
   <div class="main-content slide-left">
@@ -333,9 +341,19 @@
               <textarea id="post-sub-title" name="sub_title" rows="1" maxlength="100" class="post-subtitle autosize" placeholder="부제목을 입력하세요." style="overflow: hidden; overflow-wrap: break-word; height: 24px;"></textarea>
             </div>
           </div>
-          <div id="edit" class="post-content normal fr-box fr-ltr fr-basic font-sans-serif text-left visible free" role="application"><div class="fr-wrapper show-placeholder" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" aria-disabled="false" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" role="textbox" aria-multiline="true"><p><br></p><div class="paybox payment-line element-editor-container" id="payline" contenteditable="false"><div class="paybox-header support"><i class="fal fa-box-heart fa-2x"> </i><div class="media-body"><div class="paybox-title">결제상자를 옮겨 유료분량을 만들어보세요</div><small>유료분량을 만들고 발행을 유지하면 90% 이상이 수익을 올려요.</small></div><img class="paybox-draggable" src="https://d33pksfia2a94m.cloudfront.net/assets/img/icon/draggable.svg"></div><div class="paybox-header purchase"><i class="fal fa-box-usd fa-2x"> </i><div class="media-body"><div class="paybox-title">여기서부터 유료분량이에요</div><small>결제상자 아래의 콘텐츠는 유료로 결제해야 볼 수 있어요. 발행 창에서 가격을 정해보세요.</small></div><img class="paybox-draggable" src="https://d33pksfia2a94m.cloudfront.net/assets/img/icon/draggable.svg"></div></div></div><span class="fr-placeholder" style="font-size: 16px; line-height: 25.6px; margin-top: 0px; padding-top: 0px; padding-left: 0px; margin-left: 0px; padding-right: 0px; margin-right: 0px; text-align: left;">내용을 입력하세요.</span></div><div class="fr-second-toolbar"><a id="fr-logo" href="https://froala.com/wysiwyg-editor" target="_blank" title="Froala WYSIWYG HTML Editor"><span>Powered by</span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822.8 355.33"><defs><style>.fr-logo{fill:#b1b2b7;}</style></defs><title>Froala</title><path class="fr-logo" d="M123.58,78.65A16.16,16.16,0,0,0,111.13,73H16.6C7.6,73,0,80.78,0,89.94V128.3a16.45,16.45,0,0,0,32.9,0V104.14h78.5A15.63,15.63,0,0,0,126.87,91.2,15.14,15.14,0,0,0,123.58,78.65Z"></path><path class="fr-logo" d="M103.54,170a16.05,16.05,0,0,0-11.44-4.85H15.79A15.81,15.81,0,0,0,0,180.93v88.69a16.88,16.88,0,0,0,5,11.92,16,16,0,0,0,11.35,4.7h.17a16.45,16.45,0,0,0,16.41-16.6v-73.4H92.2A15.61,15.61,0,0,0,107.89,181,15.1,15.1,0,0,0,103.54,170Z"></path><path class="fr-logo" d="M233,144.17c-5.29-6.22-16-7.52-24.14-7.52-16.68,0-28.72,7.71-36.5,23.47v-5.67a16.15,16.15,0,1,0-32.3,0v115.5a16.15,16.15,0,1,0,32.3,0v-38.7c0-19.09,3.5-63.5,35.9-63.5a44.73,44.73,0,0,1,5.95.27h.12c12.79,1.2,20.06-2.73,21.6-11.69C236.76,151.48,235.78,147.39,233,144.17Z"></path><path class="fr-logo" d="M371.83,157c-13.93-13.11-32.9-20.33-53.43-20.33S279,143.86,265.12,157c-14.67,13.88-22.42,32.82-22.42,54.77,0,21.68,8,41.28,22.4,55.2,13.92,13.41,32.85,20.8,53.3,20.8s39.44-7.38,53.44-20.79c14.55-13.94,22.56-33.54,22.56-55.21S386.39,170.67,371.83,157Zm-9.73,54.77c0,25.84-18.38,44.6-43.7,44.6s-43.7-18.76-43.7-44.6c0-25.15,18.38-43.4,43.7-43.4S362.1,186.59,362.1,211.74Z"></path><path class="fr-logo" d="M552.7,138.14a16.17,16.17,0,0,0-16,16.3v1C526.41,143.85,509,136.64,490,136.64c-19.83,0-38.19,7.24-51.69,20.4C424,171,416.4,190,416.4,212c0,21.61,7.78,41.16,21.9,55,13.56,13.33,31.92,20.67,51.7,20.67,18.83,0,36.29-7.41,46.7-19.37v1.57a16.15,16.15,0,1,0,32.3,0V154.44A16.32,16.32,0,0,0,552.7,138.14Zm-16.3,73.6c0,30.44-22.81,44.3-44,44.3-24.57,0-43.1-19-43.1-44.3s18.13-43.4,43.1-43.4C513.73,168.34,536.4,183.55,536.4,211.74Z"></path><path class="fr-logo" d="M623.5,61.94a16.17,16.17,0,0,0-16,16.3v191.7a16.15,16.15,0,1,0,32.3,0V78.24A16.32,16.32,0,0,0,623.5,61.94Z"></path><path class="fr-logo" d="M806.5,138.14a16.17,16.17,0,0,0-16,16.3v1c-10.29-11.63-27.74-18.84-46.7-18.84-19.83,0-38.19,7.24-51.69,20.4-14.33,14-21.91,33-21.91,55,0,21.61,7.78,41.16,21.9,55,13.56,13.33,31.92,20.67,51.7,20.67,18.83,0,36.29-7.41,46.7-19.37v1.57a16.15,16.15,0,1,0,32.3,0V154.44A16.32,16.32,0,0,0,806.5,138.14Zm-16.3,73.6c0,30.44-22.81,44.3-44,44.3-24.57,0-43.1-19-43.1-44.3s18.13-43.4,43.1-43.4C767.53,168.34,790.2,183.55,790.2,211.74Z"></path></svg></a></div></div>
+          <div id="edit" class="post-content normal fr-box fr-ltr fr-basic font-sans-serif text-left visible free" role="application">
+            <div class="fr-wrapper show-placeholder" dir="ltr">
+              <div class="fr-element fr-view" dir="ltr" contenteditable="true" aria-disabled="false" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" role="textbox" aria-multiline="true">
+                <p>
+                  <br>
+                </p>
+              </div>
+              <span class="fr-placeholder" style="font-size: 16px; line-height: 25.6px; margin-top: 0px; padding-top: 0px; padding-left: 0px; margin-left: 0px; padding-right: 0px; margin-right: 0px; text-align: left;">
+                내용을 입력하세요.
+              </span>
+            </div>
+          </div>
         </div>
-        <div id="paid-content-section"></div>
       </article>
     </form>
   </div>

@@ -1,14 +1,16 @@
 /* 서브헤더 ======================================================================================================================================== */
 .sub-header-wrap {
-    margin-top: 60px;
+    background-color: #fff;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    width: 100%;
     padding: 0;
     border: 1px solid rgba(0 0 0 / 5%);
     border-left: 0;
     border-right: 0;
+    z-index: 2;
 }
 
 .web-grid {
@@ -68,6 +70,10 @@
 }
 
 /* 매인 =============================================================================================================================================== */
+.mt60 {
+    margin-top: 60px;
+}
+
 .main-grid {
     padding: 0 26px;
     max-width: 692px;
@@ -497,4 +503,45 @@
     border: 0;
     background-color: transparent;
     cursor: pointer;
+}
+
+/* 모바일 =================================================================================== */
+@media (max-width: 1000px) {
+    header {
+        height: 52px;
+    }
+
+    .sub-header-navs {
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        flex: 0 0 50%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .main-search-bar {
+        max-width: 100%;
+        width: 100%;
+        right: 0;
+        position: relative;
+    }
+
+    .search-bar-input {
+        width: 100%;
+    }
+
+    .article-container:last-child .action-dropdown-container {
+        transform: translate3d(-168px, -98px, 0px);
+    }
 }

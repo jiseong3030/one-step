@@ -34,7 +34,7 @@ body {
   align-items: center;
   font-weight: 500;
   line-height: 24px;
-  
+  margin-left: -180px;
 }
 
 .nav-wrapper {
@@ -67,6 +67,8 @@ a {
 }
 
 .base {
+  margin-left: 70px;
+  margin-top: 70px;
   width: 100%;
   height: 100%;
   padding: 0px;
@@ -468,7 +470,15 @@ html {
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: 400px) {
+  .base {
+    margin-left: 30px;
+  }
+
+  .logo {
+    margin-left: -80px;
+  }
+
   .popular-searches li {
     padding: 6px 0;
   }
@@ -503,20 +513,12 @@ html {
     max-width: 400px;
   }
 
-
-
-
-
 }
 
 
 
-@media (min-width: 1000px) {
-  .header {
-    height: 60px;
-    margin: auto;
-    padding: 0 40px;
-  }
+@media (min-width: 400px) {
+
 
   .header-container {
     height: 60px;
@@ -536,13 +538,11 @@ html {
     font-size: 48px;
   }
 
-
-
 }
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .logo .brand-link {
     font-size: 18px;
   }
@@ -573,8 +573,140 @@ html {
 
   }
 
+}
+
+/*============================================================================================================================================*/
+
+.body12 {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-width: 320px;
+  color: #000;
+  background-color: #fff;
+  font-family: "Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+
+}
+
+.content-error-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+
+.a123 {
+  color: currentColor;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.logo-img-dark {
+  opacity: .85;
+  display: inline-block;
+  width: 92px;
+  height: 24px;
+  vertical-align: top;
+  background: url(https://d33pksfia2a94m.cloudfront.net/assets/img/brand/logo.svg) no-repeat 0 0;
+  background-size: 92px 48px;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  border: 0;
+}
+
+.error-body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 32px;
+}
+
+.img45 {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.error-title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.error-message {
+  color: rgba(0,0,0,.47);
+  max-width: 320px;
+  margin: 0 auto 32px;
+}
+
+.error-btn-group {
+  padding-bottom: 32px;
+}
+
+.btn-secondary {
+  cursor: pointer;
+  transition: color .15s ease-in-out,background .15s ease-in-out,border-color .15s ease-in-out;
+  color: #000;
+  background-color: #fff;
+  border-color: #ccc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 7px 15px;
+  font-size: 15px;
+  border-radius: 4px;
+  line-height: 1.5rem;
+  background: none;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+
+}
+
+.error-footer a {
+  display: inline-block;
+  line-height: 22px;
+  text-decoration: underline;
+}
 
 
+@media (min-width: 768px) {
+  .content-error-page {
+    padding: 50px 50px 70px;
+  }
 
+  .error-body {
+    padding: 32px 0 64px;
+  }
+
+  .error-title {
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .error-message {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 60px;
+  }
+
+  .error-footer a {
+    font-size: 15px;
+  }
 
 }

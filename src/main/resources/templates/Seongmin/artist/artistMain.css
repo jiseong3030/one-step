@@ -475,6 +475,21 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     font-size: 87.5%;
 }
 
+.header-custom .btn-subscribe.active, .header-bg-img .header-custom .btn-subscribe, .header-bg-color .header-custom .btn-subscribe {
+    border-color: currentColor;
+}
+
+.blog .btn-subscribe.active {
+    background-color: transparent!important;
+    color: #aaa!important;
+}
+
+.header .masthead .btn-strong.active {
+    background-color: transparent;
+    color: rgba(0,0,0,.47)!important;
+    border: 1px solid rgba(0,0,0,.27)!important;
+}
+
 .btn [class*="fa-"]+span:not(.active-text) {
     margin-left: 5px;
 }

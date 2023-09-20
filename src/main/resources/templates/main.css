@@ -193,6 +193,19 @@ button, .btn {
     transition: color .15s ease-in-out, background .15s ease-in-out, border-color .15s ease-in-out;
 }
 
+.header .primary-nav .m-nav .btn:not(.btn-icon) {
+    padding: 5px 11px;
+    margin-left: 8px;
+}
+
+.header .primary-nav .m-nav .btn:not(.btn-icon) {
+    border: none;
+}
+
+.header .m-nav .btn-primary {
+    margin-right: 6px;
+}
+
 .btn-icon {
     width: 32px;
     height: 32px;
@@ -442,10 +455,6 @@ label {
 
 .btn.ic-secondary, .btn.ic-secondary:hover, .blog .btn.ic-secondary, .blog .btn.ic-secondary:hover {
     color: rgba(0,0,0,.47);
-}
-
-.btn:not(:disabled):not(.disabled) {
-    cursor: pointer;
 }
 
 .search-form .btn-clear:not(.activate), .search-form .btn-library-search-clear:not(.activate) {

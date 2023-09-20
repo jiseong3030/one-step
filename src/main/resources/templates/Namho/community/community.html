@@ -1,69 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>원스텝 | 내 보관함 / 게시글</title>
+    <title>원스텝 | 크라우드 펀딩</title>
     <link rel="stylesheet" href="../../root.css">
-    <link rel="stylesheet" href="mylibrary.css">
+    <link rel="stylesheet" href="community.css">
     <link rel="stylesheet" type="text/css"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" as="style"
           onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
-<div style="height: 100vh">
-    <header style="height: 60px; width: 100%"></header>
-    <div class="sub-header-wrap">
-        <div class="web-grid sub-header-container">
-            <ul class="sub-header-navs">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">게시글</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">영상</a>
-                </li>
-            </ul>
-        </div>
-        <div class="fixed-info-container"></div>
-    </div>
-    <main class="mt60">
-        <div class="main-grid">
-            <div class="main-search-container">
-                <div class="main-search-bar">
-                    <span class="search-bar-icon">
-                        <svg data-v-bd9f2bcc="" data-v-02656bf6="" width="20" height="20" viewBox="0 0 24 24"
-                             fill="black" xmlns="http://www.w3.org/2000/svg" role="button" tabindex="1" size="medium"
-                             class="icon-search" style="fill: rgb(148, 155, 160);">
-                            <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M11 16C14.3137 16 17 13.3137 17 10C17 6.68629 14.3137 4 11 4C7.68629 4 5 6.68629 5 10C5 13.3137 7.68629 16 11 16ZM11 18C15.4183 18 19 14.4183 19 10C19 5.58172 15.4183 2 11 2C6.58172 2 3 5.58172 3 10C3 14.4183 6.58172 18 11 18Z">
-                            </path>
-                            <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M15.2929 15.2929C15.6834 14.9024 16.3166 14.9024 16.7071 15.2929L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L15.2929 16.7071C14.9024 16.3166 14.9024 15.6834 15.2929 15.2929Z">
-                            </path>
-                        </svg>
-                    </span>
-                    <input type="text" class="search-bar-input" placeholder="키워드를 입력해주세요">
-                    <button class="search-bar-input-erase-btn">
-                        <svg data-v-bd9f2bcc="" data-v-02656bf6="" width="16" height="16" viewBox="0 0 16 16"
-                             fill="black" xmlns="http://www.w3.org/2000/svg" size="medium" role="button" tabindex="2"
-                             class="erase-all" style="fill: rgb(207, 212, 215);">
-                            <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8ZM5.39645 5.39645C5.59171 5.20118 5.90829 5.20118 6.10355 5.39645L8 7.29289L9.89645 5.39645C10.0917 5.20118 10.4083 5.20118 10.6036 5.39645C10.7988 5.59171 10.7988 5.90829 10.6036 6.10355L8.70711 8L10.6036 9.89645C10.7988 10.0917 10.7988 10.4083 10.6036 10.6036C10.4083 10.7988 10.0917 10.7988 9.89645 10.6036L8 8.70711L6.10355 10.6036C5.90829 10.7988 5.59171 10.7988 5.39645 10.6036C5.20118 10.4083 5.20118 10.0917 5.39645 9.89645L7.29289 8L5.39645 6.10355C5.20118 5.90829 5.20118 5.59171 5.39645 5.39645Z">
-                            </path>
-                        </svg>
+<div class="page-wrap">
+    <header style="width: 100%; height: 60px; position:fixed;"></header>
+    <main style="padding-top: 60px;">
+        <div class="blog-grid">
+            <div class="blog-header">
+                <a class="blog-img"
+                   style="background-image: url(https://d33pksfia2a94m.cloudfront.net/assets/img/avatar/blog_blank.png); transform: scale(1);">
+                </a>
+                <span class="channel-meta">
+                구독자
+                <span class="count">140</span>
+                명 · 포스트
+                <span class="count">40</span>개
+            </span>
+                <h1 class="blog-title">블로그 이름 테스트</h1>
+                <div class="blog-action-container">
+                    <a class="blog-action-share">
+                        <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-270"></i>
+                    </a>
+                    <button class="blog-action-subscription-btn">
+                        <span class="default-text">구독하기</span>
+                        <span class="active-text">구독중</span>
                     </button>
                 </div>
             </div>
+            <div class="head-nav-bar">
+                <ul>
+                    <li>
+                        <a href="">홈</a>
+                    </li>
+                    <li>
+                        <a href="">게시글</a>
+                    </li>
+                    <li>
+                        <a href="">영상</a>
+                    </li>
+                    <li>
+                        <a href="">커뮤니티</a>
+                    </li>
+                    <li>
+                        <a href="#">후원</a>
+                    </li>
+                    <li>
+                        <a class="active">크라우드 펀딩</a>
+                    </li>
+                </ul>
+            </div>
             <div class="article-wrap">
-                <article class="article-container">
-                    <div class="post-category-container">
-                        <h5 class="post-category">카테고리</h5>
-                        <hr class="post-category-devider">
-                        <h5 class="post-category">음악</h5>
+                <div class="community-head">
+                    <div style="display: flex; flex-wrap: wrap">
+                        <span>2</span>
+                        개의 크라우드 펀딩이 진행 중 입니다.
                     </div>
+                    <button class="go-to-write">게시글 작성하기</button>
+                </div>
+                <article class="article-container">
                     <div class="post">
                         <div class="post-data">
                             <a href="#">
@@ -125,10 +129,6 @@
                             </a>
                         </div>
                         <div class="post-thumbnail">
-                            <a href="">
-                                <img src="https://d3mcojo3jv0dbr.cloudfront.net/2022/12/09/17/59/437c724c608192b766f53e7b9f619753.png?w=144&amp;h=108&amp;q=65"
-                                     alt="2023 무드 차트">
-                            </a>
                         </div>
                     </div>
                     <div class="post-info">
@@ -492,14 +492,32 @@
                 </article>
             </div>
             <div class="no-article-container">
-                <p style="margin: 0 auto;">보관함 내 게시글이 없습니다.</p>
+                <p style="margin: 0 auto;">게시글이 없습니다.</p>
             </div>
         </div>
+
     </main>
+
+    <footer></footer>
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h5 id="warning-modal-label" class="modal-title">알림</h5>
+                <button type="button" class="btn btn-icon btn-close" data-dismiss="modal" aria-label="닫기">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-alert-message">테스트 메시지.</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-btn" data-dismiss="modal" id="modal-alert-confirm">확인</button>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
-<!-- <script src="https://kit.fontawesome.com/2364e2b536.js" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/2364e2b536.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="mylibrary.js"></script>
-
+<script src="community.js"></script>
 </html>

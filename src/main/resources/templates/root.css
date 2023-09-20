@@ -44,7 +44,7 @@ body {
     overflow-y: scroll;
 }
 
-button, textarea {
+button, textarea, input {
     font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 

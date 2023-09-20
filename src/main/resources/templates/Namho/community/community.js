@@ -3,6 +3,21 @@ $(function () {
         $(this).toggleClass("active");
     });
 
+    // 액션창 띄우기
+    $(".post-dropdown").click(function () {
+        var $container = $(this).closest(".post-action");
+        var $dropdown = $container.find(".action-dropdown-container");
+
+        $dropdown.toggle();
+    });
+
+    // 북마크
+    $(".post-bookmark").click(function () {
+        var $icons = $(this).find("svg");
+
+        $icons.toggleClass("active");
+    });
+
     // 모달
     $(".blog-action-share").click(function (e) {
         e.preventDefault();

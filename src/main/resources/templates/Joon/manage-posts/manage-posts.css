@@ -1021,3 +1021,70 @@ a:-webkit-any-link:hover svg, a:-webkit-any-link.active svg {
     /*border-radius:80px;*/
     fill:#FAFAFB;
 }
+
+
+/*Modal*/
+
+.shadow-s {
+    --tw-shadow: 0px 2px 8px rgba(0,0,0,.08);
+    --tw-shadow-colored: 0px 2px 8px;
+}
+
+.p-\[32px\] {
+    padding: 32px;
+}
+
+.-translate-y-1\/2 {
+    --tw-translate-y: -50%;
+}
+
+.-translate-x-1\/2 {
+    --tw-translate-x: -50%;
+}
+
+.min-w-\[360px\] {
+    min-width: 360px;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.font_headline_bold_sm {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.max-w-\[300px\] {
+    max-width: 300px;
+}
+
+.mt-\[24px\] {
+    margin-top: 24px;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.left-1\/2 {
+    left: 38%;
+}
+
+
+.top-1\/2 {
+    top: 40%;
+}

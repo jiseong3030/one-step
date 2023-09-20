@@ -209,6 +209,23 @@ label {
     user-select: none;
 }
 
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #3478ff;
+}
+
+.custom-control-input:checked~.custom-control-label::after{
+    width: 16px;
+    height: 16px;
+    top: -1px;
+    left: -21px;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    background: none;
+}
+
 .custom-control-label::after{
     position: absolute;
     top: .25rem;

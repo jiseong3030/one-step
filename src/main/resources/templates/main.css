@@ -426,7 +426,7 @@ label {
 }
 
 .header .search-form .form-control {
-    width: 260px;
+    width: 300px;
     height: 40px;
     padding: 0 48px 0 40px;
     font-size: 14px;
@@ -575,7 +575,7 @@ dl, ol, ul {
 }
 
 #pool-main-content {
-    padding-top: 112px;
+    padding-top: 80px;
 }
 
 #pool-main-home {
@@ -1011,6 +1011,10 @@ img {
 #pool-main-home .post-contents-bottom .post-action .btn [class*="fa-"] {
     font-size: 16px;
     vertical-align: top;
+}
+
+.btn-scrap.active .fa-bookmark {
+    color: #3478ff;
 }
 
 .fa-bookmark:before {

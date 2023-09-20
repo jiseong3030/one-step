@@ -7,12 +7,8 @@
     <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/44012a5eeb.js" crossorigin="anonymous"></script>
-    <!--    <link rel="stylesheet" type="text/css"-->
-    <!--          href="https://d33pksfia2a94m.cloudfront.net/assets/css/library/bootstrap.min.css">-->
-    <!--    <link rel="stylesheet" type="text/css" href="https://d33pksfia2a94m.cloudfront.net/assets/css/common.13987.css">-->
-    <!--    <link rel="stylesheet" type="text/css" href="https://d33pksfia2a94m.cloudfront.net/assets/css/main.13987.css">-->
+    <script src="main.js"></script>
 </head>
-<!--<body class="user-menu-show">-->
 <body>
 <a href="#main-content" class="sr-only" id="top">주요 내용으로 건너뛰기</a>
 <!--헤더-->
@@ -40,14 +36,6 @@
                 >
                     <i class="fas fa-search fa-lg"></i>
                 </a>
-                <button class="messages-toggle btn btn-icon d-none d-lg-inline-flex" id="messages-toggle" type="button"
-                >
-                    <i class="far fa-envelope fa-lg"></i>
-                </button>
-                <button class="notification-toggle btn btn-icon d-none d-lg-inline-flex" id="notification-toggle"
-                        type="button">
-                    <i class="far fa-bell fa-lg"></i>
-                </button>
                 <button class="btn btn-icon user-menu-toggle" id="user-menu-toggle" type="button"
                         aria-controls="user-menu" aria-expanded="false" aria-label="내비게이션 보기/감추기">
                     <div class="user-avatar-sm mr-0"></div>
@@ -61,7 +49,7 @@
                             <i class="fas fa-search"></i>
                         </span>
                         <input id="integrated-search" class="form-control form-control-sm" type="search" name="keyword"
-                               value="" data-action="grow" placeholder="검색어를 입력해주세요." maxlength="50">
+                               value="" placeholder="검색어를 입력해주세요." maxlength="50">
                         <button type="button" class="btn btn-icon btn-clear ">
                             <i class="fal fa-times btn-clear-circle"></i>
                         </button>
@@ -87,9 +75,8 @@
 </header>
 <!--프로필 모달-->
 <nav class="auto-height" id="user-menu" tabindex="-1" role="navigation">
-<!--    <div class="dropdown user-wrapper show">-->
     <div class="dropdown user-wrapper">
-        <a class="btn btn-change-profile" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+        <a class="btn btn-change-profile" href="#" aria-haspopup="true" aria-expanded="false"
            title="프로필 전환">
             <div class="profile-avatar my-menu-profile-avatar avatar-24">
                 <img class="profile-img"
@@ -97,40 +84,37 @@
                      alt="">
             </div>
             <div class="media-body">
-                <div class="text-truncate">손성민</div>
+                <div class="text-truncate user-name">손성민</div>
             </div>
-            <i class="fas fa-angle-down fa-lg"></i>
+            <i class="fas fa-angle-down fa-lg user-profile-arrow-down"></i>
         </a>
         <div class="dropdown-menu" id="profile-list" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-4px, 4px, 0px);">
-            <h6 class="dropdown-header">내 프로필</h6>
-            <a class="dropdown-item" href="">
+            <h6 class="dropdown-header">마이페이지</h6>
+            <a class="dropdown-item" href="Namho/my-page/my-page.html">
                 <div class="profile-avatar avatar-24">
                     <img class="profile-img" src="https://d3mcojo3jv0dbr.cloudfront.net/2023/09/06/23/38/9a787b703f93777569e803b91eba1ace.jpeg?w=64&amp;h=64&amp;q=65" alt="">
                 </div>
                 <span class="text-truncate">손성민</span>
             </a>
-            <a class="dropdown-item" href="">
-                <div class="avatar-24">
-                    <span class="profile-img">
-                        <i class="fas fa-user-plus"></i>
-                    </span>
-                </div>
-                새 프로필 만들기
-            </a>
+<!--            <a class="dropdown-item" href="">-->
+<!--                <div class="avatar-24">-->
+<!--                    <span class="profile-img">-->
+<!--                        <i class="fas fa-user-plus"></i>-->
+<!--                    </span>-->
+<!--                </div>-->
+<!--                새 프로필 만들기-->
+<!--            </a>-->
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="">프로필 수정</a>
+            <a class="dropdown-item" href="Namho/my-page/profile/profile.html">프로필 수정</a>
         </div>
     </div>
 
     <a class="dropdown-item" href="">홈</a>
-    <a class="dropdown-item" href="">메시지</a>
-    <a class="dropdown-item" href="">알림</a>
-    <a class="dropdown-item" href="">보관함</a>
-    <a class="dropdown-item" href="">후원</a>
-    <a class="dropdown-item" href="">설정</a>
+    <a class="dropdown-item" href="Namho/community/community.html">게시판</a>
+    <a class="dropdown-item" href="Namho/crowd-funding/crowd-funding.html">크라우드 펀딩</a>
+    <a class="dropdown-item" href="Namho/my-page/my-page.html">설정</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="">아티스트 계정 만들기</a>
-    <a class="dropdown-item" target="_blank" href="">도움 센터</a>
+    <a class="dropdown-item" href="Jiseong3030/question.html">도움 센터</a>
     <a id="dropdown-item-logout" class="dropdown-item" href="">로그아웃</a>
 </nav>
 
@@ -287,8 +271,7 @@
             </div>
             <div class="pool-posts-list-container">
                 <div class="pool-posts-list">
-                    <div class="pool-post-container" data-is-adult="false" data-type="pool" data-index="0"
-                         data-post-id="15195261">
+                    <div class="pool-post-container" data-is-adult="false" data-type="pool" data-index="0">
                         <div class="post-contents">
                             <a class="post-data home-main" href=""
                                data-channel-id="1578583">
@@ -322,9 +305,9 @@
                                 </div>
                             </div>
                             <div class="post-action">
-                                <a href="#" class="btn btn-icon btn-scrap" data-post-id="15195261">
+                                <a href="#" class="btn btn-icon btn-scrap active">
                                     <i class="far fa-bookmark default-text"></i>
-                                    <i class="far fa-bookmark active-text"></i>
+                                    <i class="fas fa-bookmark active-text"></i>
                                 </a>
                                 <div class="dropdown">
                                     <button class="btn btn-icon ic-secondary btn-more" type="button"
@@ -332,8 +315,7 @@
                                         <i class="fas fa-ellipsis-h"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-right" style="display: block">
-                                        <li><a class="btn-open-add-collection-modal" href="#"
-                                               data-post-id="15195261"><img
+                                        <li><a class="btn-open-add-collection-modal" href="#"><img
                                                 src="https://d33pksfia2a94m.cloudfront.net/assets/img/collection/add_collection.svg"
                                                 alt="" class="ic-add-collection">컬렉션에 추가하기</a></li>
                                         <li>
@@ -346,7 +328,7 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item btn-report-post" href="#" data-toggle="modal"
-                                               data-target="#report-modal" data-post-id="15195261">
+                                               data-target="#report-modal">
                                             <span class="order-2">신고하기</span>
                                             <i class="far fa-flag"></i>
                                             </a>
@@ -359,8 +341,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pool-post-container" data-is-adult="false" data-type="pool" data-index="1"
-                         data-post-id="15195261">
+                    <div class="pool-post-container" data-is-adult="false" data-type="pool" data-index="1">
                         <div class="post-contents">
                             <a class="post-data home-main" href="https://www.postype.com/post/15195261"
                                data-channel-id="1578583">
@@ -394,9 +375,9 @@
                                 </div>
                             </div>
                             <div class="post-action">
-                                <a href="#" class="btn btn-icon btn-scrap" data-post-id="15195261">
+                                <a href="#" class="btn btn-icon btn-scrap">
                                     <i class="far fa-bookmark default-text"></i>
-                                    <i class="far fa-bookmark active-text"></i>
+                                    <i class="fas fa-bookmark active-text"></i>
                                 </a>
                                 <div class="dropdown">
                                     <button class="btn btn-icon ic-secondary btn-more" type="button"
@@ -404,8 +385,7 @@
                                         <i class="fas fa-ellipsis-h"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a class="btn-open-add-collection-modal" href="#"
-                                               data-post-id="15195261"><img
+                                        <li><a class="btn-open-add-collection-modal" href="#"><img
                                                 src="https://d33pksfia2a94m.cloudfront.net/assets/img/collection/add_collection.svg"
                                                 alt="" class="ic-add-collection">컬렉션에 추가하기</a></li>
                                         <li>
@@ -418,7 +398,7 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item btn-report-post" href="#" data-toggle="modal"
-                                               data-target="#report-modal" data-post-id="15195261">
+                                               data-target="#report-modal">
                                                 <span class="order-2">신고하기</span>
                                                 <i class="far fa-flag"></i>
                                             </a>
@@ -431,8 +411,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pool-post-container" data-is-adult="false" data-type="pool" data-index="2"
-                         data-post-id="15195261">
+                    <div class="pool-post-container" data-is-adult="false" data-type="pool" data-index="2">
                         <div class="post-contents">
                             <a class="post-data home-main" href="https://www.postype.com/post/15195261"
                                data-channel-id="1578583">
@@ -466,9 +445,9 @@
                                 </div>
                             </div>
                             <div class="post-action">
-                                <a href="#" class="btn btn-icon btn-scrap" data-post-id="15195261">
+                                <a href="#" class="btn btn-icon btn-scrap">
                                     <i class="far fa-bookmark default-text"></i>
-                                    <i class="far fa-bookmark active-text"></i>
+                                    <i class="fas fa-bookmark active-text"></i>
                                 </a>
                                 <div class="dropdown">
                                     <button class="btn btn-icon ic-secondary btn-more" type="button"
@@ -476,8 +455,7 @@
                                         <i class="fas fa-ellipsis-h"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a class="btn-open-add-collection-modal" href="#"
-                                               data-post-id="15195261"><img
+                                        <li><a class="btn-open-add-collection-modal" href="#"><img
                                                 src="https://d33pksfia2a94m.cloudfront.net/assets/img/collection/add_collection.svg"
                                                 alt="" class="ic-add-collection">컬렉션에 추가하기</a></li>
                                         <li>
@@ -490,7 +468,7 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item btn-report-post" href="#" data-toggle="modal"
-                                               data-target="#report-modal" data-post-id="15195261">
+                                               data-target="#report-modal">
                                                 <span class="order-2">신고하기</span>
                                                 <i class="far fa-flag"></i>
                                             </a>
@@ -503,8 +481,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pool-post-container" data-is-adult="false" data-type="pool" data-index="3"
-                         data-post-id="15195261">
+                    <div class="pool-post-container" data-is-adult="false" data-type="pool" data-index="3">
                         <div class="post-contents">
                             <a class="post-data home-main" href="https://www.postype.com/post/15195261"
                                data-channel-id="1578583">
@@ -538,9 +515,9 @@
                                 </div>
                             </div>
                             <div class="post-action">
-                                <a href="#" class="btn btn-icon btn-scrap" data-post-id="15195261">
+                                <a href="#" class="btn btn-icon btn-scrap">
                                     <i class="far fa-bookmark default-text"></i>
-                                    <i class="far fa-bookmark active-text"></i>
+                                    <i class="fas fa-bookmark active-text"></i>
                                 </a>
                                 <div class="dropdown">
                                     <button class="btn btn-icon ic-secondary btn-more" type="button"
@@ -548,8 +525,7 @@
                                         <i class="fas fa-ellipsis-h"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a class="btn-open-add-collection-modal" href="#"
-                                               data-post-id="15195261"><img
+                                        <li><a class="btn-open-add-collection-modal" href="#"><img
                                                 src="https://d33pksfia2a94m.cloudfront.net/assets/img/collection/add_collection.svg"
                                                 alt="" class="ic-add-collection">컬렉션에 추가하기</a></li>
                                         <li>
@@ -562,14 +538,17 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item btn-report-post" href="#" data-toggle="modal"
-                                               data-target="#report-modal" data-post-id="15195261">
+                                               data-target="#report-modal">
                                                 <span class="order-2">신고하기</span>
                                                 <i class="far fa-flag"></i>
                                             </a>
                                         </li>
-                                        <li><a class="dropdown-item btn-block-blog" href="#"
-                                               data-blog-id="1578583"><span class="order-2">이 채널 보지 않기</span><i
-                                                class="fas fa-ban"></i></a></li>
+                                        <li>
+                                            <a class="dropdown-item btn-block-blog" href="#">
+                                                <span class="order-2">이 채널 보지 않기</span>
+                                                <i class="fas fa-ban"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -588,7 +567,7 @@
         <div class="home-body-inner" id="스토어">
             <div class="section-container">
                 <div class="title-container">
-                    <div class="item-title">후원</div>
+                    <div class="item-title">크라우드 펀딩</div>
                     <a class="more-link" href="/store">전체 보기</a>
                 </div>
                 <div class="goods-list">
@@ -760,44 +739,8 @@
             <span>연락처: 02-6956-0827, 팩스: 02-6442-0128</span>
         </address>
         <span class="guide">포스타입은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 포스타입은 콘텐츠, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</span>
-
     </div>
 </footer>
-<div class="backdrop fade"></div>
-<!--메세지 모달-->
-<!--<div class="pt-popover" id="messages" tabindex="-1" aria-labelledby="messages-toggle">-->
-<!--    <div class="navbar">-->
-<!--        <div class="d-flex align-items-center">-->
-<!--            <h4 class="h6 d-inline mb-0">-->
-<!--                <a class="d-inline-flex align-items-center" href="https://www.postype.com/messages">메시지<i-->
-<!--                        class="fal fa-angle-right d-none d-lg-inline"></i></a>-->
-<!--            </h4>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="content">-->
-<!--        <div class="message-list">-->
-<!--            <div class="list-group-item">-->
-<!--                <div class="error-block">진행 중인 대화가 없습니다.</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--알림창 모달-->
-<!--<div class="pt-popover" id="notifications" tabindex="-1" aria-labelledby="notification-toggle">-->
-<!--    <div class="navbar">-->
-<!--        <div class="d-flex align-items-center">-->
-<!--            <h4 class="h6 d-inline mb-0">-->
-<!--                <a class="d-inline-flex align-items-center" href="https://www.postype.com/notifications">알림<i-->
-<!--                        class="fal fa-angle-right d-none d-lg-inline"></i></a>-->
-<!--            </h4>-->
-<!--        </div>-->
-<!--        <button class="btn btn-sm btn-secondary" id="btn-read-all-dropdown" disabled="">모두 읽기</button>-->
-<!--    </div>-->
-<!--    <div class="content">-->
-<!--        <div class="notifications-list">-->
-<!--            <div class="error-block">새로운 알림이 없습니다.</div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+<div class="backdrop fade" style="display: none"></div>
 </body>
 </html>

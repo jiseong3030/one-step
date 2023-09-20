@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>원스텝 | 내 보관함 / 게시글</title>
+    <title>원스텝 | 마이페이지</title>
     <link rel="stylesheet" href="../../../root.css">
     <link rel="stylesheet" href="../my-page.css">
     <link rel="stylesheet" type="text/css"
@@ -24,9 +24,6 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="#">프로필</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">차단</a>
-                </li>
                 <h1 class="setting-font">
                     <a href="#">설정</a>
                 </h1>
@@ -37,33 +34,18 @@
     <main>
         <div class="main-container">
             <div class="section">
+                <div class="profile-avatar-container">
+                    <label class="profile-avatar" for="imgInput" id="uploaded-image-wrap">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </label>
+                    <button class="profile-avatar-cancel-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <input id="imgInput" type="file" name="file" accept="image/gif, image/jpeg, image/png"
+                       aria-describedby="fileHelp" hidden>
                 <div class="section-header">
                     <h4 class="section-title">현재 프로필 수정</h4>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">프로필 이미지</label>
-                    <div class="media">
-                        <div class="profile-avatar" id="uploaded-image-wrap">
-                            <img class="profile-img d-flex" id="uploaded-image"
-                                 src="https://d33pksfia2a94m.cloudfront.net/assets/img/avatar/avatar_blank.png">
-                        </div>
-                        <div class="media-body">
-                            <div class="form-control">
-                                <input class="form-control-file" id="upload-image" type="file" name="file"
-                                       accept="image/gif, image/jpeg, image/png" aria-describedby="fileHelp">
-                            </div>
-                            <div class="row">
-                                <div class="col75">
-                                    <small class="form-text" id="fileHelp">최대 10MB의 이미지 파일</small>
-                                </div>
-                                <div class="col25">
-                                    <button class="form-delete-btn" type="button"
-                                            id="btn-delete-profile-photo">이미지 삭제
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="form-group">
                     <label for="name" class="form-label">닉네임</label>
@@ -82,4 +64,7 @@
     </main>
 </div>
 </body>
+<script src="https://kit.fontawesome.com/2364e2b536.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="profile.js"></script>
 </html>

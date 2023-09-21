@@ -926,6 +926,8 @@ a:-webkit-any-link:hover svg, a:-webkit-any-link.active svg {
 .shadow-s {
     --tw-shadow: 0px 2px 8px rgba(0,0,0,.08);
     --tw-shadow-colored: 0px 2px 8px;
+    border-color: black;
+
 }
 
 .p-\[32px\] {

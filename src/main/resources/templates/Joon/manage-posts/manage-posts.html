@@ -136,7 +136,7 @@
 
                             <h2 class="content_primary mb-[12px] font_title_bold_md text-center">임준영</h2>
                             <a class="_blank" href="/">
-                                <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">
+                                <button type="button" class="hobercolor relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">
                                     <div class="flex items-center justify-center">
                                         <div>내 페이지</div>
                                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" class="ml-[4px] shrink-0">
@@ -262,7 +262,7 @@
                                         게시글 관리
    </h1>
     <div class="flex gap-[16px]">
-        <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[40px] rounded-[20px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">
+        <button type="button" class="hobercolor relative flex justify-center items-center font_button_bold_md  h-[40px] rounded-[20px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">
         게시글 편집</button>
         <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[40px] rounded-[20px] content_primary_inverse surface_primary_inverse hover:surface_primary_inverse_active active:surface_primary_inverse_active disabled:surface_disabled px-[16px]  false disabled:content_disabled">
             작성</button>
@@ -303,16 +303,48 @@
             </div>
 
                 <div class="flex gap-x-[12px]">
-                    <div class="relative">
-                        <button type="button" class="surface_primary border px-[16px] h-[32px] py-[8px] border_black_opacity rounded-[16px] flex items-center max-w-[164px] outline-none">
+
+                    <div class="header-icon">
+                     <div class="relative">
+                        <button type="button" id="categoryhober" class="surface_primary border px-[16px] h-[32px] py-[8px] border_black_opacity rounded-[16px] flex items-center max-w-[164px] outline-none">
                         <span class="content_secondary font_label_medium_lg text-ellipsis overflow-hidden whitespace-nowrap">
                             카테고리 전체</span>
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0 ml-[4px] w-[10px] h-[10px]">
                             <path fill-rule="evenodd"  clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
                             </svg>
                         </button>
+
+                         <!--    hober start      -->
+                         <div id="hobercate"  class="header-user-info-popover-wrap">
+                             <div class="header-user-info-popover-container">
+
+                                 <hr class="header-popover-devider">
+                                 <a href="#">
+                                     <div class="header-popover-content">
+                                         <div class="header-popover-content-font">카테고리 전체</div>
+                                     </div>
+                                 </a>
+                                 <a href="#">
+                                     <div class="header-popover-content">
+                                         <div class="header-popover-content-font">카테고리 미설정</div>
+                                     </div>
+                                 </a>
+                                 <!--                                    <a href="#">-->
+                                 <!--                                        <div class="header-popover-content">-->
+                                 <!--                                            <div class="header-popover-content-font">Server</div>-->
+                                 <!--                                        </div>-->
+                                 <!--                                    </a>-->
+                                 <hr class="header-popover-devider">
+
+                             </div>
+                         </div>
+                         <!--    hober end                          -->
+
+
+                        </div>
                     </div>
 
+                    <div class="header-icon">
                     <div class="relative">
                         <button type="button" class="surface_primary border px-[16px] h-[32px] py-[8px] border_black_opacity rounded-[16px] flex items-center max-w-[164px] outline-none">
                         <span class="content_secondary font_label_medium_lg text-ellipsis overflow-hidden whitespace-nowrap">
@@ -321,8 +353,37 @@
                                 <path fill-rule="evenodd"  clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
                             </svg>
                         </button>
-                    </div>
+                        <!--    hober start      -->
+                        <div  class="header-user-info-popover-wrap">
+                            <div class="header-user-info-popover-container">
 
+                                <hr class="header-popover-devider">
+                                <a href="#">
+                                    <div class="header-popover-content">
+                                        <div class="header-popover-content-font">공개범위 전체</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="header-popover-content">
+                                        <div class="header-popover-content-font">전체 공개</div>
+                                    </div>
+                                </a>
+                                   <a href="#">
+                                      <div class="header-popover-content">
+                                        <div class="header-popover-content-font">회원 공개</div>
+                                            </div>
+                                   </a>
+                                <hr class="header-popover-devider">
+
+                            </div>
+                        </div>
+                        <!--    hober end                          -->
+
+
+                    </div>
+                        </div>
+
+                    <div class="header-icon">
                     <div class="relative">
                         <button type="button" class="surface_primary border px-[16px] h-[32px] py-[8px] border_black_opacity rounded-[16px] flex items-center max-w-[164px] outline-none">
                         <span class="content_secondary font_label_medium_lg text-ellipsis overflow-hidden whitespace-nowrap">
@@ -331,6 +392,34 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
                             </svg>
                         </button>
+
+                        <!--    hober start      -->
+                        <div  class="header-user-info-popover-wrap">
+                            <div class="header-user-info-popover-container">
+
+                                <hr class="header-popover-devider">
+                                <a href="#">
+                                    <div class="header-popover-content">
+                                        <div class="header-popover-content-font">최신순</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="header-popover-content">
+                                        <div class="header-popover-content-font">조회순</div>
+                                    </div>
+                                </a>
+                                   <a href="#">
+                                      <div class="header-popover-content">
+                                           <div class="header-popover-content-font">좋아요순</div>
+                                      </div>
+                                   </a>
+                                <hr class="header-popover-devider">
+
+                            </div>
+                        </div>
+                        <!--    hober end                          -->
+                    </div>
+
                     </div>
                 </div>
             </div>
@@ -383,12 +472,12 @@
         </div>
 
         <div class="ml-auto flex items-center gap-x-[12px]">
-        <button type="button" class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+        <button type="button" class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
         <path fill-rule="evenodd" clip-rule="evenodd" d="m15.687 8.163.545-.506c1.024-.951 1.024-2.493 0-3.444-1.024-.95-2.684-.95-3.709 0l-8.362 7.765-1.127 3.547c-.183.577.395 1.113 1.016.943l3.82-1.046 6.661-6.186.005.004 1.155-1.073-.004-.004Zm-2.312 0-6.367 5.912-1.981.543.584-1.84 6.367-5.912 1.397 1.297Zm1.156-1.073-1.397-1.298.545-.506a1.042 1.042 0 0 1 1.397 0 .872.872 0 0 1 0 1.298l-.545.506Z"></path>
         </svg>
         </button>
-        <button type="button" name=modalbutton class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+        <button type="button" name=modalbutton class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 0 1 1.4 0v3.6a.7.7 0 0 1-.7.7ZM14 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 1 1 1.4 0v3.6a.7.7 0 0 1-.7.7Z"></path>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.6 3.8h4.6c.22 0 .4.178.4.4v1.4H9.2V4.2c0-.222.179-.4.4-.4Zm-2 .4a2 2 0 0 1 2-2h4.6a2 2 0 0 1 2 2v1.4h3.5a.8.8 0 0 1 0 1.6H19v10.4a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V7.2h-.7a.8.8 0 1 1 0-1.6h3.3V4.2Zm-1 3h10.8v10.4A2.4 2.4 0 0 1 15 20H9a2.4 2.4 0 0 1-2.4-2.4V7.2Z"></path>
@@ -445,12 +534,12 @@
                                         </div>
 
                                         <div class="ml-auto flex items-center gap-x-[12px]">
-                                            <button type="button" class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+                                            <button type="button" class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
                                                 <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="m15.687 8.163.545-.506c1.024-.951 1.024-2.493 0-3.444-1.024-.95-2.684-.95-3.709 0l-8.362 7.765-1.127 3.547c-.183.577.395 1.113 1.016.943l3.82-1.046 6.661-6.186.005.004 1.155-1.073-.004-.004Zm-2.312 0-6.367 5.912-1.981.543.584-1.84 6.367-5.912 1.397 1.297Zm1.156-1.073-1.397-1.298.545-.506a1.042 1.042 0 0 1 1.397 0 .872.872 0 0 1 0 1.298l-.545.506Z"></path>
                                                 </svg>
                                             </button>
-                                            <button type="button" name=modalbutton class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+                                            <button type="button" name=modalbutton class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
                                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 0 1 1.4 0v3.6a.7.7 0 0 1-.7.7ZM14 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 1 1 1.4 0v3.6a.7.7 0 0 1-.7.7Z"></path>
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.6 3.8h4.6c.22 0 .4.178.4.4v1.4H9.2V4.2c0-.222.179-.4.4-.4Zm-2 .4a2 2 0 0 1 2-2h4.6a2 2 0 0 1 2 2v1.4h3.5a.8.8 0 0 1 0 1.6H19v10.4a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V7.2h-.7a.8.8 0 1 1 0-1.6h3.3V4.2Zm-1 3h10.8v10.4A2.4 2.4 0 0 1 15 20H9a2.4 2.4 0 0 1-2.4-2.4V7.2Z"></path>
@@ -507,12 +596,12 @@
                                         </div>
 
                                         <div class="ml-auto flex items-center gap-x-[12px]">
-                                            <button type="button" class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+                                            <button type="button" class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
                                                 <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="m15.687 8.163.545-.506c1.024-.951 1.024-2.493 0-3.444-1.024-.95-2.684-.95-3.709 0l-8.362 7.765-1.127 3.547c-.183.577.395 1.113 1.016.943l3.82-1.046 6.661-6.186.005.004 1.155-1.073-.004-.004Zm-2.312 0-6.367 5.912-1.981.543.584-1.84 6.367-5.912 1.397 1.297Zm1.156-1.073-1.397-1.298.545-.506a1.042 1.042 0 0 1 1.397 0 .872.872 0 0 1 0 1.298l-.545.506Z"></path>
                                                 </svg>
                                             </button>
-                                            <button type="button" name=modalbutton class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+                                            <button type="button" name=modalbutton class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
                                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 0 1 1.4 0v3.6a.7.7 0 0 1-.7.7ZM14 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 1 1 1.4 0v3.6a.7.7 0 0 1-.7.7Z"></path>
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.6 3.8h4.6c.22 0 .4.178.4.4v1.4H9.2V4.2c0-.222.179-.4.4-.4Zm-2 .4a2 2 0 0 1 2-2h4.6a2 2 0 0 1 2 2v1.4h3.5a.8.8 0 0 1 0 1.6H19v10.4a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V7.2h-.7a.8.8 0 1 1 0-1.6h3.3V4.2Zm-1 3h10.8v10.4A2.4 2.4 0 0 1 15 20H9a2.4 2.4 0 0 1-2.4-2.4V7.2Z"></path>
@@ -569,12 +658,12 @@
                                         </div>
 
                                         <div class="ml-auto flex items-center gap-x-[12px]">
-                                            <button type="button" class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+                                            <button type="button" class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
                                                 <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="m15.687 8.163.545-.506c1.024-.951 1.024-2.493 0-3.444-1.024-.95-2.684-.95-3.709 0l-8.362 7.765-1.127 3.547c-.183.577.395 1.113 1.016.943l3.82-1.046 6.661-6.186.005.004 1.155-1.073-.004-.004Zm-2.312 0-6.367 5.912-1.981.543.584-1.84 6.367-5.912 1.397 1.297Zm1.156-1.073-1.397-1.298.545-.506a1.042 1.042 0 0 1 1.397 0 .872.872 0 0 1 0 1.298l-.545.506Z"></path>
                                                 </svg>
                                             </button>
-                                            <button type="button" name=modalbutton class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+                                            <button type="button" name=modalbutton class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
                                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 0 1 1.4 0v3.6a.7.7 0 0 1-.7.7ZM14 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 1 1 1.4 0v3.6a.7.7 0 0 1-.7.7Z"></path>
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.6 3.8h4.6c.22 0 .4.178.4.4v1.4H9.2V4.2c0-.222.179-.4.4-.4Zm-2 .4a2 2 0 0 1 2-2h4.6a2 2 0 0 1 2 2v1.4h3.5a.8.8 0 0 1 0 1.6H19v10.4a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V7.2h-.7a.8.8 0 1 1 0-1.6h3.3V4.2Zm-1 3h10.8v10.4A2.4 2.4 0 0 1 15 20H9a2.4 2.4 0 0 1-2.4-2.4V7.2Z"></path>
@@ -631,12 +720,12 @@
                                         </div>
 
                                         <div class="ml-auto flex items-center gap-x-[12px]">
-                                            <button type="button" class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+                                            <button type="button" class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
                                                 <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="m15.687 8.163.545-.506c1.024-.951 1.024-2.493 0-3.444-1.024-.95-2.684-.95-3.709 0l-8.362 7.765-1.127 3.547c-.183.577.395 1.113 1.016.943l3.82-1.046 6.661-6.186.005.004 1.155-1.073-.004-.004Zm-2.312 0-6.367 5.912-1.981.543.584-1.84 6.367-5.912 1.397 1.297Zm1.156-1.073-1.397-1.298.545-.506a1.042 1.042 0 0 1 1.397 0 .872.872 0 0 1 0 1.298l-.545.506Z"></path>
                                                 </svg>
                                             </button>
-                                            <button type="button" name=modalbutton class="w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
+                                            <button type="button" name=modalbutton class="hobercolor w-[40px] h-[40px] border border_primary rounded-full flex justify-center items-center">
                                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] content_secondary">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 0 1 1.4 0v3.6a.7.7 0 0 1-.7.7ZM14 15.6a.7.7 0 0 1-.7-.7v-3.6a.7.7 0 1 1 1.4 0v3.6a.7.7 0 0 1-.7.7Z"></path>
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.6 3.8h4.6c.22 0 .4.178.4.4v1.4H9.2V4.2c0-.222.179-.4.4-.4Zm-2 .4a2 2 0 0 1 2-2h4.6a2 2 0 0 1 2 2v1.4h3.5a.8.8 0 0 1 0 1.6H19v10.4a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V7.2h-.7a.8.8 0 1 1 0-1.6h3.3V4.2Zm-1 3h10.8v10.4A2.4 2.4 0 0 1 15 20H9a2.4 2.4 0 0 1-2.4-2.4V7.2Z"></path>
@@ -704,7 +793,6 @@
                 </div>
             </div>
 
-            </div>
         </main>
     </div>
 </div>

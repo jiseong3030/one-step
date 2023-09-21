@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" xmlns:a="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 상세 페이지</title>
+    <link rel="stylesheet" href="../../root.css">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" as="style"
+          onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="h-blog-grid">
+        <a id="h-logo" href="#"></a>
+        <div class="brand-wrap">
+            <a class="gnb-brand" href="https://richlaboratory.postype.com" title="부자연구소" id="blog-logo-wrapper">
+                <div class="gnb-title">부자연구소</div>
+            </a>
+        </div>
+        <div class="h-actions-container">
+            <a class="h-nav-item" href="#">
+                <svg enable-background="new 0 0 50 50" id="Layer_1" version="1.1" viewBox="0 0 50 50"
+                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/>
+                    <circle cx="21" cy="20" fill="none" r="16" stroke="#000000" stroke-linecap="round"
+                            stroke-miterlimit="10" stroke-width="2"/>
+                    <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="32.229" x2="45.5"
+                          y1="32.229" y2="45.5"/>
+                </svg>
+            </a>
+            <button class="h-nav-item">
+                <i class="fa-regular fa-envelope"></i>
+                <div class=""></div>
+            </button>
+            <button class="h-nav-item">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <button class="h-nav-item">
+                <div class="h-user-avatar"
+                     style="background-image: url(https://d33pksfia2a94m.cloudfront.net/assets/img/avatar/avatar_blank.png)"></div>
+                <div class="h-user-menu-popover">
+                    <div class="h-current-user-container">
+                        <div class="h-user-avatar-s">
+                            <img class="profile-img" src="https://d33pksfia2a94m.cloudfront.net/assets/img/avatar/avatar_blank.png" alt="">
+                        </div>
+                        <div class="h-user-nickname">테스트 유저</div>
+                    </div>
+                    <hr class="h-popover-divider">
+                    <a class="h-popover-menu-item" href="#">홈</a>
+                    <a class="h-popover-menu-item" href="#">구독</a>
+                    <a class="h-popover-menu-item" href="#">메시지</a>
+                    <a class="h-popover-menu-item" href="#">알림</a>
+                    <a class="h-popover-menu-item" href="#">보관함</a>
+                    <a class="h-popover-menu-item" href="#">멤버십</a>
+                    <a class="h-popover-menu-item" href="#">포인트/수익</a>
+                    <a class="h-popover-menu-item" href="#">주문내역</a>
+                    <a class="h-popover-menu-item" href="#">설정</a>
+                    <hr class="h-popover-divider">
+                    <a class="h-popover-menu-item" href="#">새 채널 만들기</a>
+                    <a class="h-popover-menu-item" href="#">로그아웃</a>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a class="btn-back" href="javascript:void(0);" id="post-viewer-header-btn-back" data-series-url="https://richlaboratory.postype.com/series/1148610/멘탈훈련소" aria-label="멘탈 훈련소" title="멘탈 훈련소">
+                    <i class="fa-chevron-left"></i>
+                </a>
+            </div>
+            <div class="navbar-center">
+                <div class="navbar-title">
+                    <div class="title-text1">
+                        <span>당신 삶에 아우라가 생기는 방법</span>
+                    </div>
+                    <div class="sub-title1">
+                        <a class="sub-title2" href="https://richlaboratory.postype.com/series/1166270/매력훈련소">매력 훈련소</a>
+                    </div>
+                </div>
+                <a class="btn-prev" href="https://richlaboratory.postype.com/post/15314775" aria-label="이전화" title="이전글 - 연봉 7~8천 훈남들이 매달리는 여자">
+                    <i class="fas fa-caret-left"></i>
+                </a>
+                <a class="btn-prev-next" href="https://richlaboratory.postype.com/post/15327561" aria-label="다음화" title="다음글 - 남자들의 구혼 1순위 여자 특징">
+                    <i class="fas fa-caret-right"></i>
+                </a>
+            </div>
+            <div class="navbar-right">
+                <button class="disabled-on-preview" type="button" data-post-id="15323357" aria-label="좋아요" title="좋아요">
+                    <i class="fas fa-heart active-text"></i>
+                </button>
+                <a class="btn-scrap" href="#" data-post-id="15323357" aria-label="스크랩에 추가" title="스크랩에 추가">
+                    <i class="fas fa-bookmark active-text"></i>
+                </a>
+                <button class="episodes-toggle" type="button" aria-label="회차 목록">회차 목록</button>
+            </div>
+        </div>
+    </div>
+</header>
+<main id="main">
+    <div id="main-content">
+        <article id="post" data-series-id="1166270" data-series-title="매력 훈련소" data-point="1000" data-for-adult="0" data-is-free="0" data-admin-tag="지식" data-post-title="당신 삶에 아우라가 생기는 방법">
+            <div class="container">
+                <header class="post-container">
+                    <h4 class="series-title">
+                        <a href="https://richlaboratory.postype.com/series/1166270/매력훈련소">매력 훈련소</a>
+                    </h4>
+                    <div class="title-wrap">
+                        <h1 class="post-title6">당신 삶에 아우라가 생기는 방법</h1>
+                        <h2 class="post-subtitle6">두 셀럽에게 배우는 삶의 '품격'</h2>
+                    </div>
+                    <div class="post-meta3">
+                        <a class="profile-avatar" href="https://www.postype.com/profile/@cmtlrj" rel="author">
+                            <img class="profile-img6" src="https://d3mcojo3jv0dbr.cloudfront.net/2023/07/16/13/40/8541d563fc2cc5232980c5643c074438.jpeg?w=64&amp;h=64&amp;q=65" alt="Laydalio">
+                        </a>
+                        <div class="media-body">
+                            <div class="article-author">
+                                <a class="gray-990 disabled-on-preview" href="https://www.postype.com/profile/@cmtlrj" rel="author">Laydalio</a>
+                            </div>
+                            <div class="text-gray">
+                                <time class="meta-item2">2023.09.21</time>
+                                <span class="view-count">* 조회
+                                    <span class="status-count">673</span>
+                                </span>
+                                <span class="comment-count">
+                                    <a href="#responses">* 댓글
+                                        <span class="stats-count">0</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="action-group">
+                            <button class="btn-share" type="button" title="공유" data-post-title="당신 삶에 아우라가 생기는 방법" data-blog-title="부자연구소" data-tags="지식 인문 심리 건강 ">
+                                <i class="fal fa-sign-out fa-rotate-270"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-content3">
+                            <p>즐겨보는 예능 프로그램 중 '유퀴즈'라고 있다.</p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>유재석과 조세호가 진행하는 이 프로그램은 소위 셀럽부터 독특한 직업을 가진 일반인에 이르기까지<br>
+                                광범위한 게스트를 초대하여 능란하게 인터뷰를 진행한다. 볼 때마다 하나씩은 배우는 게 있다.</p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>배우 김희애 방영분도 그랬다.</p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>
+                                김희애 방영분에서 인상적이었던 것은 그녀가 하루를 시작하는 단순한 '루틴' 때문이었는데,<br>
+                                너무 단순하면서도 중요한 루틴이었던지라 여기 필히 기록을 해두지 않을 수가 없을 듯싶다.
+                            </p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>
+                                박진영 씨의 방영분 또한 마찬가지. 그가 밝힌 매일의 루틴 역시 대단히 인상깊었는데, 지나치게 엄격한 게<br>
+                                아닌가 싶을 정도로 스스로를 철저하게 통제하고 관리한다는 인상이 들었다.
+                            </p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>그러나 그런 노력이 있기 때문일 것이다. 쉰살이 넘은 나이인데도 불구하고 어지간한 청년들 이상의<br>
+                                신체 스펙을 유지하는 비결은.
+                            </p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>김희애는 1967년 4월생으로 올해 쉰 여섯, 박진영은 1971년 12월생으로 쉰 하나다.</p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>
+                                이 글을 읽는 여러분에게 둘은 부모뻘일 수도 있고 삼촌, 이모뻘일 수도 있다.
+                            </p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>
+                                어쨌거나 두 남녀가 유지하는 루틴을 따라하는 것은 삶에 '아우라'가 번지게 만드는 아주 중요한 '팁'이<br>
+                                돼줄 수 있겠다는 판단이다.
+                            </p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>
+                                인생을 멋지게 장기 우상향시키면서 은은한 아우라까지 더해진다니 일석이조 아닌가.
+                            </p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>
+                                파고들어가보자.
+                            </p>
+                            <p>
+                                <br>
+                            </p>
+                            <p>(월 4500원 멤버십에 가입하면 이 글의 전문과 다른 모든 게시글을 읽을 수 있다.)</p>
+                            <p>
+                                <br>
+                            </p>
+                            <section class="pay-purchase">
+                                <div class="pay-header">
+                                    <p class="gray-550">이어지는 내용이 궁금하세요? 포스트를 구매하거나 멤버십에 가입하고 이어지는 내용을 감상해보세요.</p>
+                                    <ul class="product-list">
+                                        <li class="product-item">
+                                            <i class="fal fa-file-alt"></i>
+                                        </li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="pay-body"></div>
+                                <div class="pay-footer"></div>
+                            </section>
+                            <section></section>
+                        </div>
+                    </div>
+                </header>
+
+            </div>
+        </article>
+    </div>
+
+</main>
+
+</body>
+<script src="https://kit.fontawesome.com/2364e2b536.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="detail.js"></script>
+</html>

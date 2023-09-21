@@ -918,6 +918,11 @@ a:-webkit-any-link:hover svg, a:-webkit-any-link.active svg {
     opacity: 1;
 }
 
+.hobertest:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
 .header-user-info-popover-container {
     background: #fff;
     border-radius: 4px;
@@ -1028,6 +1033,7 @@ a:-webkit-any-link:hover svg, a:-webkit-any-link.active svg {
 .shadow-s {
     --tw-shadow: 0px 2px 8px rgba(0,0,0,.08);
     --tw-shadow-colored: 0px 2px 8px;
+    border-color: black;
 }
 
 .p-\[32px\] {
@@ -1087,4 +1093,125 @@ h4 {
 
 .top-1\/2 {
     top: 40%;
+}
+
+
+/*hober end*/
+
+
+.hobercolor {
+    transition-duration: 0.2s;
+}
+
+.hobercolor:hover{
+    background-color:#F3F3F4 ;
+}
+
+
+/*Hober*/
+
+.header-icon:hover .header-user-info-popover-wrap {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hobertest:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-user-info-popover-container {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
+    position: relative;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.header-user-info-container {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px 4px;
+}
+
+.header-user-info-container:hover {
+    background-color: #f3f4f5;
+}
+
+.header-detailed-user-avatar {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.header-detailed-user-con {
+    margin-left: 8px;
+    max-width: 104px;
+}
+
+.header-detailed-user-id {
+    color: rgb(60, 65, 68);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    display: -webkit-box;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
+
+.header-detailed-user-more {
+    color: rgb(173, 179, 184);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.header-popover-devider {
+    border-top: 1px;
+    border-style: solid;
+    border-color: rgb(243, 244, 245);
+    background-color: transparent;
+    height: 0;
+    width: 100%;
+}
+
+.header-popover-content {
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.header-popover-content:last-child {
+    margin-top: 6px;
+}
+
+.header-popover-content:hover {
+    background-color: #f3f4f5;
+}
+
+.header-popover-content-font {
+    color: rgb(60, 65, 68);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.header-popover-logout-font {
+    color: rgb(148, 155, 160);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 }

@@ -369,10 +369,11 @@ header {
 .episodes-toggle {
     margin-left: 16px;
     cursor: pointer;
-    padding: 3px 12px;
+    padding: 1px 10px;
     background-color: white;
     border-color: rgba(0,0,0,.15);
     border: 1px ridge;
+    border-color: lightgrey;
 }
 
 #main {
@@ -389,7 +390,7 @@ header {
 }
 
 .post-body {
-    height: 1888.52px;
+    height: 3888.52px;
     margin-top: 30px;
     border-top: 1px solid rgba(0,0,0,.05);
 }
@@ -545,7 +546,6 @@ header {
     text-indent: 0!important;
     min-height: 1.7em;
     margin-top: 0;
-
 }
 
 .product-list {
@@ -562,9 +562,10 @@ header {
     margin: 4px 4px 0 0;
     font-size: 14px;
     line-height: 20px;
-    border: 1px solid transparent;
-    border-radius: 4px;
+
     text-align: left!important;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
 }
 
 .fa-file-alt {
@@ -572,7 +573,7 @@ header {
     font-size: 18px;
     line-height: 20px;
     vertical-align: middle;
-    font-family: 'Font Awesome 5 Pro';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -581,17 +582,296 @@ header {
     text-rendering: auto;
 }
 
+.fa-image {
+    margin-right: 4px;
+    font-size: 18px;
+    line-height: 20px;
+    vertical-align: middle;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 300;
+}
 
 
+#gr550 {
+    font-size: 10px;
+}
 
+.pay-body {
+    text-align: left!important;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0,0,0,.05);
+}
 
+.pay-price {
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-top: 7px
+}
 
+.abbr-point {
+    text-decoration: none;
+    cursor: initial;
 
+}
+
+.btn-strong {
+    background-color: rgba(0,0,0,1);
+    color: rgba(255,255,255,1)!important;
+    border: 1px solid transparent;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 4px;
+}
+
+.pay-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0,0,0,.05);
+}
+
+.btn-purchases {
+    display: flex;
+    align-items: center;
+    border-color: transparent;
+    background-color: transparent;
+    color: #3478ff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+}
+
+.fa-chevron-right {
+    font-size: 11px;
+    margin-left: 7px;
+    font-family: 'FontAwesome';
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+
+}
+
+.pay-membership {
+    margin-top: 20px;
+    position: relative;
+    max-width: 700px;
+    padding: 0 20px;
+    text-align: left;
+    word-break: break-word;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+
+.pay-author-img {
+    float: right;
+    border-radius: 50%;
+    display: block;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.dropdown {
+    margin: 6px 0 -16px -12px;
+    position: relative;
+
+}
+
+.fa-question-circle {
+    margin-left: 3px;
+    font-size: inherit;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 300;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.dropdown-menu {
+    max-width: 260px;
+    padding: 16px 18px 18px;
+    font-size: 13px;
+    line-height: 16px;
+    min-width: 200px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: #606060;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    float: left;
+    margin: 0.125rem 0 0;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    margin-top: -100px;
+    margin-left: -300px;
+}
+
+.pay-mplan {
+    position: relative;
+}
+
+.mplan-header {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.mplan-title {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 22px;
+}
+
+.mplan-price {
+    height: 26px;
+    line-height: 26px;
+    word-spacing: -0.1em;
+}
+
+.fa-chevron-down {
+    margin: 0 4px 0 16px;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.collapse {
+    display: block;
+}
+
+.mplan-feature {
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    padding: 10px 0 0 16px;
+
+}
+
+.li45 {
+    margin-bottom: 0;
+    text-align: left!important;
+}
+
+.membership67401 {
+    text-decoration: none;
+    color: inherit;
+    margin-left: -10px;
+}
+
+.mplan-description {
+    color: rgba(0,0,0,.47);
+    margin-top: 10px;
+}
+
+.btn-membership {
+    margin-left: 100px;
+}
+
+.pay-footer {
+    padding-top: 12px;
+    text-align: right;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0,0,0,.05);
+}
+
+.btn150 {
+    padding: 5px 11px;
+    margin: -9px -12px -9px 0;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: 'FontAwesome';
+    font-weight: 300;
+}
+
+.tag-list {
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    list-style: none;
+}
+
+.sr-only {
+    display: inline-block;
+    margin: 3px 8px 3px 0;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    color: inherit;
+}
+
+.gray-600 {
+    min-width: 30px;
+    padding: 7px 9px 7px 8px;
+    margin: 3px 0;
+    vertical-align: middle;
+    transition: color .15s ease-in-out,border-color .15s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 25rem;
+
+}
 
 
 
 
 @media (min-width: 400px) {
+    .tag-list {
+        padding-top: 28px;
+    }
+
+
+
     .gnb-brand {
         max-width: 512px;
         margin-left: -4px;
@@ -688,7 +968,7 @@ header {
 
     .episodes-toggle {
         display: inline-block;
-
+        border-radius: 5px;
     }
 
     #main {
@@ -766,6 +1046,76 @@ header {
         font-size: 15px;
         line-height: 19px;
     }
+
+    .pay-price {
+        font-size: 19px;
+    }
+
+    .btn-strong {
+        font-weight: 400;
+        padding: 5px 15px;
+
+    }
+
+    .pay-membership {
+        padding-right: 24px;
+        padding-left: 24px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .pay-author-img {
+        width: 50px;
+        height: 50px;
+        margin-left: 24px;
+    }
+
+    .dropdown {
+        margin-bottom: -12px;
+    }
+
+    #btn-membership-help {
+        font-size: 13px;
+    }
+
+    .pay-mplan {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mplan-header {
+        order: 1;
+        flex: 1;
+    }
+
+    .mplan-price {
+        font-size: 13px;
+    }
+
+    .mplan-body {
+        order: 3;
+        flex: 0 0 100%;
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .mplan-feature {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    mplan-description {
+        padding-bottom: 0;
+    }
+
+    .mplan-footer {
+        order: 2;
+        height: 48px;
+        padding: 6px 0;
+        margin: 0 0 0 20px;
+    }
+
 
 
 

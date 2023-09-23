@@ -262,7 +262,7 @@ header {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
-
+    font-family: 'FontAwesome';
 }
 
 .navbar-center {
@@ -862,15 +862,426 @@ header {
 
 }
 
+.post-pager {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 1px ridge;
+    margin-top: 50px;;
+}
+
+.pager-item1 {
+    align-items: center;
+    display: flex;
+}
+
+.flex-middle {
+    flex: 1;
+    align-items: center;
+    display: flex;
+}
+
+.pager-label {
+    color: rgba(0,0,0,.47);
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.media-body7 {
+    flex: auto;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.pager-title {
+    margin-bottom: 0;
+    font-weight: 500;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: inherit;
+    margin-top: 0;
+}
+
+.pager-subtitle {
+    color: rgba(0,0,0,.47);
+    margin: 4px 0 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pager-img {
+    position: relative;
+    flex-shrink: 0;
+
+}
+
+.pager-img9 {
+    background-image: url(https://d3mcojo3jv0dbr.cloudfront.net/2023/09/18/17/12/074c52a….jpeg?w=240&h=180&q=65);
+    border-radius: inherit;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f7f7f7;
+}
+
+.pager-item2 {
+    border-top: 1px ridge;
+}
+
+.pager-img91 {
+    border-radius: inherit;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f7f7f7;
+    background-image: url(https://d3mcojo3jv0dbr.cloudfront.net/2023/09/16/18/41/a65abba….jpeg?w=240&h=180&q=65);
+}
+
+.profile-gray50{
+    background-color: #f7f7f7;
+
+}
+
+.container32 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.container44 {
+    max-width: 700px;
+    padding: 0;
+    margin-left: 2px;
+}
 
 
+.profile-bar {
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+}
+
+.profile-img-link {
+    margin-right: 12px;
+    width: 60px;
+    height: 60px;
+    border-radius: 7.5%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.blog-img {
+    width: inherit;
+    height: inherit;
+    vertical-align: top;
+    border-style: none;
+}
+
+.profile-title98 {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: inherit;
+}
+
+.rich2 {
+    font-size: 17px;
+}
+
+.profile-subtitle-gray-600 {
+    color: #757575;
+    margin-top: 2px;
+    font-size: 13px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.subscribe4 {
+    border: 1px solid transparent;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,1);
+    color: rgba(255,255,255,1)!important;
+    margin-right: 8px;
+}
+
+.section-head6 {
+    padding-bottom: 0;
+    border-bottom: 0 solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    margin-left: 1000px;
+}
+
+.comment-section-title {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: -330px;
+    margin-left: -1000px;
+    margin-top: -30px;
+}
+
+
+.comment-customize-form {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    background-color: #fff;
+    padding: 16px;
+    margin-bottom: 40px;
+}
+
+.form-control5 {
+    color: rgba(0,0,0,.33);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    border: 0 solid transparent;
+    padding: 0;
+    height: 65px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+}
+
+.brand-icons {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.btn-icon {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.brand-icon-google {
+    background-image: url(https://d33pksfia2a94m.cloudfront.net/assets/img/social/google.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.brand-icon-facebook {
+    background-image: url(https://d33pksfia2a94m.cloudfront.net/assets/img/social/facebook.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.brand-icon-naver {
+    background-image: url(https://d33pksfia2a94m.cloudfront.net/assets/img/social/naver.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btn-create-comment {
+    border-radius: 6px;
+    border: 1px solid transparent;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.related-post {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding-top: 60px!important;
+    border-top: 1px solid rgba(0,0,0,.05);
+}
+
+.container445 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.section-head8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    margin-left: -320px;
+    border-bottom: 0px solid rgba(0, 0, 0, .05);
+}
+
+.comment-section-title44 {
+    font-weight: 600;
+    padding: 6px 0;
+    margin: 0;
+    line-height: 20px;
+}
 
 @media (min-width: 400px) {
-    .tag-list {
-        padding-top: 28px;
+    .comment-section-title44 {
+        font-size: 18px;
+    }
+
+    .section-head8 {
+        padding-bottom: 8px;
+    }
+
+    .container445 {
+        max-width: 700px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .related-post {
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .btn-create-comment {
+        font-weight: 400;
+        padding: 5px 15px;
+    }
+
+    .btn-icon {
+        min-width: 36px;
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+    }
+
+    .comment-section-title {
+        font-size: 16px;
+    }
+
+    .response3 {
+        padding-top: 80px;
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .subscribe4 {
+        font-weight: 400;
+        padding: 5px 15px;
+    }
+
+    .container32 {
+        max-width: 700px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .profile-gray50 {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 24px;
+        margin-left: 0px;
+        border-radius: 10px;
+    }
+
+    .pager-img91 {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        transition: all .5s;
+    }
+
+    .pager-item2 {
+        border-left: 0;
+    }
+
+    .pager-img9 {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        transition: all .5s;
+    }
+
+    .pager-img {
+        width: 128px;
+        height: 96px;
+        margin-left: 40px;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-left: 2px;
+    }
+
+    .pager-title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .pager-label {
+        margin: 0 20px;
+        width: 60px;
+        font-size: 13px;
+    }
+
+    .flex-middle {
+        min-height: 128px;
+        padding: 16px 0;
+        overflow: visible;
+        max-width: 700px;
+    }
+
+    .post-pager {
+        font-size: 14px;
+        line-height: 19px;
     }
 
 
+    .tag-list {
+        padding-top: 28px;
+    }
 
     .gnb-brand {
         max-width: 512px;

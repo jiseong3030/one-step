@@ -1138,7 +1138,7 @@ header {
 
 .container445 {
     margin-right: auto;
-    margin-left: auto;
+
     width: 100%;
 }
 
@@ -1150,7 +1150,7 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 32px;
-    margin-left: -320px;
+
     border-bottom: 0px solid rgba(0, 0, 0, .05);
 }
 
@@ -1161,9 +1161,357 @@ header {
     line-height: 20px;
 }
 
+.promotion-banner12 {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.promotion-banner77 {
+    background-color: #007aff;
+    margin: 42px 5px;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: -1px;
+    margin-top: 60px;
+}
+
+.promotion-banner-img {
+    display: block;
+    width: auto;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.component-post-list {
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    word-break: break-all;
+    margin-top: -40px;
+}
+
+.component33 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.post21 {
+    display: flex;
+    flex: 1;
+    word-wrap: break-word;
+}
+
+.post-date {
+    flex: 1;
+    overflow: hidden;
+}
+
+.ellipsis-26 {
+    line-height: 135%;
+    font-weight: 600;
+    color: #000!important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 0;
+}
+
+.text-alpha-black-47 {
+    font-size: 14px;
+    color: rgba(0,0,0,.47)!important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.discount4 {
+    display: inline;
+    font-weight: 600;
+    line-height: inherit;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    color: inherit;
+    margin-top: 0;
+}
+
+.divider {
+    content: "";
+    display: inline-block;
+    margin: -0.1em 0.45em 0.1em 0.3em;
+    height: 1em;
+    vertical-align: middle;
+    border-left: 1px solid;
+    opacity: .6;
+}
+
+.mes-postype {
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.post-tags {
+    display: flex;
+    line-height: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-top: 8px;
+}
+
+.tag-promotion {
+    color: #3478FF;
+    background: #EBF4FF;
+}
+
+.pro1613 {
+    position: relative;
+    display: block
+}
+
+.img-098 {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.post-info43 {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile-avatar {
+    display: block;
+    position: relative;
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.user-profile-avatar-img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background-color: #fff;
+    object-fit: cover;
+}
+
+.post-info43-body {
+    flex: 1;
+    overflow: hidden;
+}
+
+.user-profile-nickname {
+    font-size: 13px;
+    line-height: 135%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.post-meta1 {
+    position: relative;
+    height: 16px;
+    margin-top: 1px;
+    font-size: 12px;
+    line-height: 130%;
+    overflow: hidden;
+    color: rgba(0,0,0,.47)!important;
+}
+
+.ic-eye {
+    font-size: 12px;
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+    opacity: .47;
+    background-size: 13px 13px;
+    vertical-align: top;
+    background-image: url(https://d33pksfia2a94m.cloudfront.net/assets/img/icon/ic_eye_black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    font-style: normal;
+    transform-origin: center top;
+}
+
+#hart {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 14px;
+}
+
+.post-action7 {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 64px;
+}
+
+#de23 {
+    font-size: 21px;
+    vertical-align: top;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 300;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+#de24 {
+    font-size: 16px;
+    vertical-align: top;
+    display: none;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+}
+
+#drop3 {
+    position: relative;
+}
+
+#second34 {
+    min-width: 32px;
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+    color: rgba(0,0,0,.47);
+}
+
+#ellip {
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.component-post-list3 {
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    word-break: break-all;
+    margin-top: -40px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+#hart2 {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 14px;
+}
+
+#de231 {
+    font-size: 21px;
+    vertical-align: top;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 300;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+#de241 {
+    font-size: 16px;
+    vertical-align: top;
+    display: none;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+}
+
+.component331 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
 @media (min-width: 400px) {
+    #drop3 {
+        margin-left: 4px;
+    }
+
+    .post-action7 {
+        margin-left: 24px;
+    }
+
+    .meta-item6 {
+        margin-right: 8px;
+    }
+
+    .post-info43 {
+        margin-top: 15px;
+    }
+
+    .img-098 {
+        width: 144px;
+        height: 108px;
+        background-color: #F7F7F7;
+    }
+
+    .post-data-thumbnail {
+        margin-left: 24px;
+    }
+
+    .tag-promotion {
+        font-size: 14px;
+        line-height: 20.3px;
+        padding: 1px 6px;
+        margin-right: 6px;
+        display: inline-block;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 3px;
+        transition: background-color .15s ease-in-out;
+    }
+
+    .post-tags {
+        height: 22px;
+    }
+
+    .mes-postype {
+        font-size: 15px;
+    }
+
+    .discount4 {
+        font-size: 15px;
+    }
+
+    .text-alpha-black-47 {
+        line-height: 145%;
+    }
+
+    .ellipsis-26{
+        margin-bottom: 7px;
+        font-size: 20px;
+    }
+
+    .promotion-banner-img {
+        height: 100px;
+    }
+
     .comment-section-title44 {
         font-size: 18px;
+
     }
 
     .section-head8 {

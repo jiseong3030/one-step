@@ -129,6 +129,12 @@
     margin-right: 15px;
 }
 
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
 .funding-money-input {
     width: 218px;
     height: 41px;
@@ -227,4 +233,33 @@
     padding: 11px 19px;
     font-size: 16px;
     border-radius: 4px;
+}
+
+/* 모바일 =================================================================================== */
+@media (max-width: 1000px) {
+    header {
+        height: 56px;
+    }
+
+    .content-container {
+        padding-top: 20px;
+    }
+
+    .table-body {
+        flex-direction: column;
+    }
+
+    .table-cell {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group-row {
+        flex-direction: column;
+    }
+
+    .form-group-input-con {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }

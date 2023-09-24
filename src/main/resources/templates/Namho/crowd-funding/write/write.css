@@ -293,3 +293,43 @@
     position: absolute;
     right: 0;
 }
+
+/* 모바일 =================================================================================== */
+@media (max-width: 1000px) {
+    header {
+        height: 56px;
+    }
+
+    .crowd-funding-wrap {
+        padding: 10px;
+    }
+    
+    .btn-wrap {
+        position: relative;
+        right: 0;
+    }
+    
+    .accept-btn-wrap {
+        position: relative;
+        order: 1;
+        right: 0;
+        margin-top: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .request-wrap .crowd-funding-head {
+        flex-direction: column;
+    }
+
+    #slidedownBtn{
+        position: relative;
+    }
+
+    .form-content {
+        margin: 0;
+        padding: 16px 8px;
+    }
+}

@@ -1,14 +1,16 @@
 /* 서브헤더 ======================================================================================================================================== */
 .sub-header-wrap {
-    margin-top: 60px;
+    background-color: #fff;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    width: 100%;
     padding: 0;
     border: 1px solid rgba(0 0 0 / 5%);
     border-left: 0;
     border-right: 0;
+    z-index: 2;
 }
 
 .web-grid {
@@ -133,15 +135,9 @@
     border-top: 1px solid #e9e9e9;
 }
 
-.videos-row-container {
-    width: 100%;
-    margin: 0 16px;
-    display: flex;
-}
-
 .video-article {
     margin: 0 8px 40px;
-    width: calc(100%/3 - 16px - 0.01px);
+    width: calc(100% / 3 - 16px - 0.01px);
 }
 
 .video-thumbnail-container {
@@ -383,4 +379,64 @@
     text-align: center;
     word-break: keep-all;
     color: #757575;
+}
+
+/* 모바일 =================================================================================== */
+@media (max-width: 1000px) {
+    header {
+        height: 52px;
+    }
+
+    .sub-header-wrap {
+        top: 52px;
+    }
+
+    .sub-header-navs {
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        flex: 0 0 50%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .main-search-bar {
+        max-width: 100%;
+        width: 100%;
+        right: 0;
+        position: relative;
+        margin: 0 26px;
+    }
+
+    .search-bar-input {
+        width: 100%;
+    }
+
+    .video-article {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .video-thumbnail-container {
+        border-radius: 0;
+    }
+
+    .video-thumbnail-container a::after {
+        border-radius: 0;
+    }
+
+    .video-info {
+        padding: 0 10px;
+    }
 }

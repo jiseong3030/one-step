@@ -492,3 +492,52 @@
     word-break: keep-all;
     color: #757575;
 }
+
+@media (max-width: 1000px) {
+    header {
+        height: 52px;
+    }
+
+    .sub-header-wrap {
+        top: 52px;
+    }
+
+    .sub-header-navs {
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        flex: 0 0 50%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .main-search-bar {
+        max-width: 100%;
+        width: 100%;
+        right: 0;
+        position: relative;
+    }
+
+    .search-bar-input {
+        width: 100%;
+    }
+
+    .artist-info-container {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .article-container:last-child .action-dropdown-container {
+        transform: translate3d(-168px, -98px, 0px);
+    }
+}

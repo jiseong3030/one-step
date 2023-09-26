@@ -316,6 +316,7 @@ header {
     max-width: 100%;
     display: flex;
     align-items: center;
+    margin-left: -25px;
 }
 
 .disabled-on-preview {
@@ -339,6 +340,10 @@ header {
     text-rendering: auto;
     line-height: 1;
     color: #80808069;
+}
+
+#active-text {
+    display: none;
 }
 
 .btn-scrap {
@@ -367,9 +372,9 @@ header {
 
 
 .episodes-toggle {
-    margin-left: 16px;
+    margin-left: 5px;
     cursor: pointer;
-    padding: 1px 10px;
+    padding: 1px 6px;
     background-color: white;
     border-color: rgba(0,0,0,.15);
     border: 1px ridge;

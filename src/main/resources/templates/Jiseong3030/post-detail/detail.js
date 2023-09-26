@@ -16,4 +16,3 @@ postImages.on('click', function(e) {
     }
 })
 
-

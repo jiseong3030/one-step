@@ -1,189 +1,131 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // 재원님 작업 완료 되면 onclick시 나의 일정, 게시물, 댓글 링크 걸기
-    const editProfile = document.querySelector(".editProfile");
-    const asideMenuContainer = document.querySelector(".asideMenuContainer");
-    const profileContentsContainer = document.querySelector(
-        ".profileContentsContainer"
-    );
-    const backwardButton = document.querySelector(".backwardButton");
+// 첫 화면에서는 첫번째 배너가 보이지만 이 함수가 실행되는 순간 이제 두 번째 배너로 넘어가는 것이다.
+function autoSlide() {
+  // 이동되는 데 걸리는 시간은 0.5초
+  banner.style.transition = "transform 0.5s";
+  // 마지막 슬라이드일 때
+  // 6번 뒤에 1번 배치시킨다.
+  // 6번에서 1번으로 슬라이드 진행
+  // 0s를 줘서 원래 1번 위치로 이동(슬라이드 효과는 안보임)
+  count++;
+  if (count == 6) {
+    buttons[count - 1].style.backgroundColor = "#f0f0f0";
+    banner.style.transform = "translate(-" + 90 * (count + 1) + "vw)";
+    setTimeout(function () {
+      banner.style.transition = "transform 0s";
+      banner.style.transform = "translate(-90vw)";
+    }, 500);
+    count = 0;
+    buttons[count].style.backgroundColor = "black";
+  } else {
+    // 처음에는 첫번째 배너가 선택되어 있기 때문에 다음으로 넘어가면서 이전 배너부분의 버튼 색을 돌려준다.
+    buttons[count - 1].style.backgroundColor = "#f0f0f0";
+    // 이번에 보여질 배너부분의 버튼 색을 검은색으로 돌려준다.
+    buttons[count].style.backgroundColor = "black";
+    // 왼쪽으로 -90 * (count + 1) 만큼 이동한다.
+    // 왜 count에 + 1을 한 것인가? : 가장 앞에 6번 배너부터 시작되기 때문이다.
+    banner.style.transform = "translate(-" + 90 * (count + 1) + "vw)";
+  }
+  // 초기화할 버튼객체를 temp에 담는다.
+  temp = buttons[count];
+}
 
-    const myProfileContainer = document.querySelector(".myProfileContainer");
-    const myProfile = document.querySelector(".myProfile");
-    const myProfileButton = document.querySelector(".myProfileButton");
+// 무한 반복
+const banner = document.querySelector("div.banner");
+const buttons = document.querySelectorAll("div.buttons button");
+let count = 0,
+  temp = buttons[count];
+let firstDiv = document.createElement("div");
+let lastDiv = document.createElement("div");
 
-    const membershipWithdrawalContainer = document.querySelector(
-        ".membershipWithdrawalContainer"
-    );
-    const membershipWithdrawal = document.querySelector(".membershipWithdrawal");
-    const membershipWithdrawalLinkButton = document.querySelector(
-        ".membershipWithdrawalLinkButton"
-    );
+// 가장 마지막에 첫번째 배너를 이어 붙인다, 슬라이드 모션이 자연스럽게 1번으로 돌아가게 하기 위함
+firstDiv.innerHTML = `<img src="001.png">`;
+banner.appendChild(firstDiv);
 
-    const verifyNickname = document.querySelector(".verifyNickname");
-    const saveNickname = document.querySelector(".saveNickname");
+// 가장 첫번째에 마지막 배너를 이어 붙인다, 이전 버튼 클릭 시 슬라이드 모션이 자연스럽게 6번으로 돌아가게 하기 위함
+lastDiv.innerHTML = `<img src="006.png">`;
+banner.insertBefore(lastDiv, document.querySelector("div.banner div"));
 
-    const serviceNotificationAgreementContainer = document.querySelector(
-        ".serviceNotificationAgreementContainer"
-    );
-    const serviceNotificationLabel = document.querySelector(
-        "#serviceNotificationLabel"
-    );
+// 첫번째 버튼이 무조건 첫번째 배너이기 때문에 검은색 칠하고 시작
+buttons[count].style.backgroundColor = "black";
 
-    const commercialNotificationAgreementContainer = document.querySelector(
-        ".commercialNotificationAgreementContainer"
-    );
-    const commercialNotificationLabel = document.querySelector(
-        "#commercialNotificationLabel"
-    );
+// 첫번째 배너는 6번이니까 왼쪽으로 한 번 밀어서 1번 보이게 함.
+banner.style.transform = "translate(-90vw)";
 
-    const profileContents = document.querySelector(".profileContents");
-    const membershipWithdrawalWrapper = document.querySelector(
-        ".membershipWithdrawalWrapper"
-    );
-    const mainBorderDividingLine = document.querySelector(
-        ".mainBorderDividingLine"
-    );
-    const notificationSettingTitle = document.querySelector(
-        ".notificationSettingTitle"
-    );
-    const notificationSettingContainer = document.querySelector(
-        ".notificationSettingContainer"
-    );
+// 4초마다 슬라이드 이동
+let inter = setInterval(autoSlide, 4000);
 
-    // 1. myProfileContainer나 membershipWithdrawalContainer onclick시 선택된 컨텐츠 class에 active 추가하고 다른 컨테이너 html에서 class 속성 중에 active 빼기
-    myProfileContainer.addEventListener("click", (e) => {
-        changeActive(e);
-    });
-    membershipWithdrawalContainer.addEventListener("click", (e) => {
-        changeActive(e);
-    });
+// 원하는 번호의 배너 보기
+// 각 버튼마다 클릭 이벤트 적용
 
-    function changeActive(event) {
-        if (event.target === myProfile || event.target === myProfileButton) {
-            myProfileContainer.classList.add("active");
-            membershipWithdrawalContainer.classList.remove("active");
-            myProfile.style.color = "#040505";
-            membershipWithdrawal.style.color = "#adb3b8";
-        } else if (
-            event.target === membershipWithdrawal ||
-            event.target === membershipWithdrawalLinkButton
-        ) {
-            membershipWithdrawalContainer.classList.add("active");
-            myProfileContainer.classList.remove("active");
-            myProfile.style.color = "#adb3b8";
-            membershipWithdrawal.style.color = "#040505";
-        }
+// 버튼을 광클하지 못하게 막아주는 FLAG
+let numberButtonCheck = true;
+
+buttons.forEach((v, i, btns) => {
+  // 각 버튼에 click이벤트를 걸어줌.
+  btns[i].addEventListener("click", function () {
+    // 아래의 얍삽한 방법으로 인해 0s로 변할 수 있기 때문에 무조건 0.5s로 설정하고 시작
+    banner.style.transition = "transform 0.5s";
+    if (numberButtonCheck) {
+      // 0.5초가 지나고 나서 클릭했거나 처음 클릭하거나
+      numberButtonCheck = false; // 누르자마자 바로 false
+      clearInterval(inter); // autoSlide 타이머 제거, 동시에 돌아가면 안됨.
+      count = i; // 클릭한 버튼의 인덱스를 배너의 번호로 설정
+      temp.style.backgroundColor = "#f0f0f0"; // 이전에 적용된 버튼의 배경을 원상복구.
+      buttons[count].style.backgroundColor = "black"; // 클릭한 버튼의 배경을 검은색.
+      banner.style.transform = "translate(-" + 90 * (count + 1) + "vw)"; // 클릭한 버튼의 인덱스번호를 통해 배너번호로 이동
+      temp = buttons[count]; // 지금 선택된 버튼 객체 담아주기
+      inter = setInterval(autoSlide, 4000); //버튼 클릭 다했으니까 auto slide 다시 작동
+      // 클릭하고 나서 할 거 다 하고 0.5초 후에 FLAG를 true로 변경
+      // 0.5초 안에는 다시 클릭 못하게 막아주기
+      setTimeout(function () {
+        numberButtonCheck = true;
+      }, 500);
     }
+  });
+});
 
-    /*
-    닉네임 에러시
-    .nicknameBox {
-      border-color: #e92525;
-      color: #e92525;
-    }
-
-    .nicknameUpdateMessageContainer {
-      color: rgb(233, 37, 37);
-    }
-
-    .nicknameUpdateMessageContainer > svg {
-      fill: rgb(233, 37, 37) !important;
-    }
-    */
-
-    document.addEventListener("click", (e) => {
-        // 2. 닉네임 중복확인 버튼 누를시 중복확인 버튼 css에 background-color: #d4e5f9; 저장 버튼 css에 background-color: #2a7de1; 주기
-        if (e.target === verifyNickname) {
-            verifyNickname.style.backgroundColor = "#d4e5f9";
-            saveNickname.style.backgroundColor = "#2a7de1";
+// 이전 버튼, 다음 버튼 구현
+const arrows = document.querySelectorAll("div.arrow");
+let arrowButtonCheck = true;
+arrows.forEach((arrow) => {
+  arrow.addEventListener("click", function () {
+    if (arrowButtonCheck) {
+      arrowButtonCheck = false;
+      clearInterval(inter);
+      banner.style.transition = "transform 0.5s";
+      let arrowType = arrow.classList[2];
+      if (arrowType == "prev") {
+        count--;
+        if (count == -1) {
+          banner.style.transform = "translate(0vw)";
+          setTimeout(function () {
+            banner.style.transition = "transform 0s";
+            banner.style.transform = "translate(-540vw)";
+          }, 500);
+          count = 5;
+        } else {
+          banner.style.transform = "translate(-" + 90 * (count + 1) + "vw)";
         }
-
-        // 3. 저장 버튼 누를시 저장 버튼 css에 background-color: #1b5192; 주기
-        if (e.target === saveNickname) {
-            verifyNickname.style.backgroundColor = "#fff";
-            saveNickname.style.backgroundColor = "#1b5192";
+      } else {
+        count++;
+        if (count == 6) {
+          banner.style.transform = "translate(-" + 90 * (count + 1) + "vw)";
+          setTimeout(function () {
+            banner.style.transition = "transform 0s";
+            banner.style.transform = "translate(-90vw)";
+          }, 500);
+          count = 0;
+        } else {
+          banner.style.transform = "translate(-" + 90 * (count + 1) + "vw)";
         }
-
-        // 4. 중복확인이나 저장버튼 밖을 누르면 색깔 다시 돌아오기
-        if (e.target !== (verifyNickname && saveNickname)) {
-            if (verifyNickname.style.backgroundColor === "#d4e5f9") {
-                verifyNickname.style.backgroundColor = "#fff";
-                saveNickname.style.backgroundColor = "#2a7de1";
-            }
-            if (saveNickname.style.backgroundColor === "#1b5192") {
-                verifyNickname.style.backgroundColor = "#fff";
-                saveNickname.style.backgroundColor = "#2a7de1";
-            }
-        }
-        // 5. 큰 옵션 선택하면 초기화되는 기능
-        if (
-            e.target === editProfile ||
-            e.target === backwardButton ||
-            e.target === myProfile ||
-            e.target === membershipWithdrawal
-        ) {
-            verifyNickname.style.backgroundColor = "#fff";
-            saveNickname.style.backgroundColor = "#d4e5f9";
-        }
-    });
-
-    // 6. 서비스 알림 동의, 광고 알림 동의 버튼 누를 시 label 태그에 checked 추가하기, 이미 checked되 있는 상태에서 다시 한번 누르면 checked 삭제하기
-    serviceNotificationAgreementContainer.addEventListener("click", (e) => {
-        changeChecked(e);
-    });
-    commercialNotificationAgreementContainer.addEventListener("click", (e) => {
-        changeChecked(e);
-    });
-
-    function changeChecked(event) {
-        if (event.target === serviceNotificationAgreementContainer) {
-            if (serviceNotificationLabel.classList.contains("checked")) {
-                serviceNotificationLabel.classList.remove("checked");
-            } else {
-                serviceNotificationLabel.classList.add("checked");
-            }
-        } else if (event.target === commercialNotificationAgreementContainer) {
-            if (commercialNotificationLabel.classList.contains("checked")) {
-                commercialNotificationLabel.classList.remove("checked");
-            } else {
-                commercialNotificationLabel.classList.add("checked");
-            }
-        }
+      }
+      temp.style.backgroundColor = "#f0f0f0";
+      temp = buttons[count];
+      buttons[count].style.backgroundColor = "black";
+      inter = setInterval(autoSlide, 4000);
+      setTimeout(function () {
+        arrowButtonCheck = true;
+      }, 500);
     }
-
-    //7. 회원탈퇴 링크버튼 누를 시 profileContentsContainer 에서 profileContentsHeader, membershipWithdrawalWrapper만  display: block 설정하고 나머지 요소들에 display: none 설정하기
-    membershipWithdrawalLinkButton.addEventListener("click", () => {
-        profileContents.style.display = "none";
-        mainBorderDividingLine.style.display = "none";
-        notificationSettingTitle.style.display = "none";
-        notificationSettingContainer.style.display = "none";
-        membershipWithdrawalWrapper.style.display = "block";
-    });
-    myProfile.addEventListener("click", () => {
-        profileContents.style.display = "block";
-        mainBorderDividingLine.style.display = "block";
-        notificationSettingTitle.style.display = "block";
-        notificationSettingContainer.style.display = "block";
-        membershipWithdrawalWrapper.style.display = "none";
-    });
-
-    // 8. 개인정보 설정 누르면 asideMenuContainer 숨기고 profileContentsContainer 보이기, backwardButton 누르면 반대로 적용
-    window.addEventListener("resize", () => {
-        asideMenuContainer.style.display = "block";
-        profileContentsContainer.style.display = "block";
-    });
-    if (window.innerWidth < 1001) {
-        editProfile.addEventListener("click", () => {
-            asideMenuContainer.style.display = "none";
-            profileContentsContainer.style.display = "block";
-        });
-        backwardButton.addEventListener("click", () => {
-            asideMenuContainer.style.display = "block";
-            profileContentsContainer.style.display = "none";
-        });
-    }
-
-    document.addEventListener("click", (e) => {
-        console.log(e.target);
-    });
+  });
 });

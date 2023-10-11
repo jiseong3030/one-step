@@ -1353,6 +1353,12 @@ textarea.autosize {
     text-overflow: ellipsis;
 }
 
+#summernote {
+    border: none;
+    width: 100%;
+    height: 50vw;
+}
+
 @media all {
     @media all and (min-width: 360px) {
         .editor .header .primary-nav > .container {

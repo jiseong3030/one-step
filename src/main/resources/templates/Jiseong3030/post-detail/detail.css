@@ -1897,6 +1897,25 @@ header {
 
 }
 
+/*===================================================================================================================================*/
+
+.autosize {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    height: 40px;
+    margin-top: 12px;
+    min-height: fit-content;
+    max-height: 105px;
+    border: 0 solid transparent;
+    padding: 0;
+    width: 658px;
+}
+
+
+
+
+
+
 
 
 
